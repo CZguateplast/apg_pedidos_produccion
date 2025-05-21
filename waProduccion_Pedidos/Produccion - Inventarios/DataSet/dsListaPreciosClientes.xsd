@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsListaPreciosClientes" targetNamespace="http://tempuri.org/dsListaPreciosClientes.xsd" xmlns:mstns="http://tempuri.org/dsListaPreciosClientes.xsd" xmlns="http://tempuri.org/dsListaPreciosClientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsListaPreciosClientes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsListaPreciosClientes" msprop:Generator_UserDSName="dsListaPreciosClientes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtListaPreciosCliente" msprop:Generator_TableClassName="dsdtListaPreciosClienteDataTable" msprop:Generator_TableVarName="tabledsdtListaPreciosCliente" msprop:Generator_TablePropName="dsdtListaPreciosCliente" msprop:Generator_RowDeletingName="dsdtListaPreciosClienteRowDeleting" msprop:Generator_RowChangingName="dsdtListaPreciosClienteRowChanging" msprop:Generator_RowEvHandlerName="dsdtListaPreciosClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtListaPreciosClienteRowDeleted" msprop:Generator_UserTableName="dsdtListaPreciosCliente" msprop:Generator_RowChangedName="dsdtListaPreciosClienteRowChanged" msprop:Generator_RowEvArgName="dsdtListaPreciosClienteRowChangeEvent" msprop:Generator_RowClassName="dsdtListaPreciosClienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListaPrecios" msprop:Generator_ColumnVarNameInTable="columnListaPrecios" msprop:Generator_ColumnPropNameInRow="ListaPrecios" msprop:Generator_ColumnPropNameInTable="ListaPreciosColumn" msprop:Generator_UserColumnName="ListaPrecios" type="xs:short" minOccurs="0" />
+              <xs:element name="CodigoCliente" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreCliente" msprop:Generator_ColumnVarNameInTable="columnNombreCliente" msprop:Generator_ColumnPropNameInRow="NombreCliente" msprop:Generator_ColumnPropNameInTable="NombreClienteColumn" msprop:Generator_UserColumnName="NombreCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrupoCliente" msprop:Generator_ColumnVarNameInTable="columnGrupoCliente" msprop:Generator_ColumnPropNameInRow="GrupoCliente" msprop:Generator_ColumnPropNameInTable="GrupoClienteColumn" msprop:Generator_UserColumnName="GrupoCliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Moneda" msprop:Generator_ColumnVarNameInTable="columnMoneda" msprop:Generator_ColumnPropNameInRow="Moneda" msprop:Generator_ColumnPropNameInTable="MonedaColumn" msprop:Generator_UserColumnName="Moneda" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtListaPreciosCliente" />
+      <xs:field xpath="mstns:CodigoCliente" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

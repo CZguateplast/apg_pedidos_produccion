@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTemporal_ProgramacionGrafica" targetNamespace="http://tempuri.org/dsTemporal_ProgramacionGrafica.xsd" xmlns:mstns="http://tempuri.org/dsTemporal_ProgramacionGrafica.xsd" xmlns="http://tempuri.org/dsTemporal_ProgramacionGrafica.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTemporal_ProgramacionGrafica" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTemporal_ProgramacionGrafica" msprop:Generator_UserDSName="dsTemporal_ProgramacionGrafica">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtOrdenesProgramadas" msprop:Generator_TableClassName="dsdtOrdenesProgramadasDataTable" msprop:Generator_TableVarName="tabledsdtOrdenesProgramadas" msprop:Generator_RowChangedName="dsdtOrdenesProgramadasRowChanged" msprop:Generator_TablePropName="dsdtOrdenesProgramadas" msprop:Generator_RowDeletingName="dsdtOrdenesProgramadasRowDeleting" msprop:Generator_RowChangingName="dsdtOrdenesProgramadasRowChanging" msprop:Generator_RowEvHandlerName="dsdtOrdenesProgramadasRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtOrdenesProgramadasRowDeleted" msprop:Generator_RowClassName="dsdtOrdenesProgramadasRow" msprop:Generator_UserTableName="dsdtOrdenesProgramadas" msprop:Generator_RowEvArgName="dsdtOrdenesProgramadasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Preferencial" msprop:Generator_ColumnVarNameInTable="columnPreferencial" msprop:Generator_ColumnPropNameInRow="Preferencial" msprop:Generator_ColumnPropNameInTable="PreferencialColumn" msprop:Generator_UserColumnName="Preferencial" type="xs:int" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Prioridad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPrioridad" msprop:Generator_ColumnPropNameInRow="Prioridad" msprop:Generator_ColumnPropNameInTable="PrioridadColumn" msprop:Generator_UserColumnName="Prioridad" type="xs:int" minOccurs="0" />
+              <xs:element name="PrioridadMaquina" msprop:Generator_ColumnVarNameInTable="columnPrioridadMaquina" msprop:Generator_ColumnPropNameInRow="PrioridadMaquina" msprop:Generator_ColumnPropNameInTable="PrioridadMaquinaColumn" msprop:Generator_UserColumnName="PrioridadMaquina" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="ProduccionHora" msprop:Generator_ColumnVarNameInTable="columnProduccionHora" msprop:Generator_ColumnPropNameInRow="ProduccionHora" msprop:Generator_ColumnPropNameInTable="ProduccionHoraColumn" msprop:Generator_UserColumnName="ProduccionHora" type="xs:string" minOccurs="0" />
+              <xs:element name="HorasPendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHorasPendiente" msprop:Generator_ColumnPropNameInRow="HorasPendiente" msprop:Generator_ColumnPropNameInTable="HorasPendienteColumn" msprop:Generator_UserColumnName="HorasPendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="FechaInicio" msprop:Generator_ColumnVarNameInTable="columnFechaInicio" msprop:Generator_ColumnPropNameInRow="FechaInicio" msprop:Generator_ColumnPropNameInTable="FechaInicioColumn" msprop:Generator_UserColumnName="FechaInicio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaFinal" msprop:Generator_ColumnVarNameInTable="columnFechaFinal" msprop:Generator_ColumnPropNameInRow="FechaFinal" msprop:Generator_ColumnPropNameInTable="FechaFinalColumn" msprop:Generator_UserColumnName="FechaFinal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

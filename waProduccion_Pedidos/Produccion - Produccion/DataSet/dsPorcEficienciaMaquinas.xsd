@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPorcEficienciaMaquinas" targetNamespace="http://tempuri.org/dsPorcEficienciaMaquinas.xsd" xmlns:mstns="http://tempuri.org/dsPorcEficienciaMaquinas.xsd" xmlns="http://tempuri.org/dsPorcEficienciaMaquinas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPorcEficienciaMaquinas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPorcEficienciaMaquinas" msprop:Generator_UserDSName="dsPorcEficienciaMaquinas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtPorcEficienciaMaquinas" msprop:Generator_TableClassName="dsdtPorcEficienciaMaquinasDataTable" msprop:Generator_TableVarName="tabledsdtPorcEficienciaMaquinas" msprop:Generator_RowChangedName="dsdtPorcEficienciaMaquinasRowChanged" msprop:Generator_TablePropName="dsdtPorcEficienciaMaquinas" msprop:Generator_RowDeletingName="dsdtPorcEficienciaMaquinasRowDeleting" msprop:Generator_RowChangingName="dsdtPorcEficienciaMaquinasRowChanging" msprop:Generator_RowEvHandlerName="dsdtPorcEficienciaMaquinasRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtPorcEficienciaMaquinasRowDeleted" msprop:Generator_RowClassName="dsdtPorcEficienciaMaquinasRow" msprop:Generator_UserTableName="dsdtPorcEficienciaMaquinas" msprop:Generator_RowEvArgName="dsdtPorcEficienciaMaquinasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+              <xs:element name="Porcentaje" msprop:Generator_ColumnVarNameInTable="columnPorcentaje" msprop:Generator_ColumnPropNameInRow="Porcentaje" msprop:Generator_ColumnPropNameInTable="PorcentajeColumn" msprop:Generator_UserColumnName="Porcentaje" type="xs:decimal" />
+              <xs:element name="Bit_CreacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_CreacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_CreacionFechaColumn" msprop:Generator_UserColumnName="Bit_CreacionFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bit_CreacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_CreacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_CreacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_CreacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_ModificacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_ModificacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_ModificacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionFechaColumn" msprop:Generator_UserColumnName="Bit_ModificacionFecha" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtPorcEficienciaMaquinas_LOG" msprop:Generator_TableClassName="dsdtPorcEficienciaMaquinas_LOGDataTable" msprop:Generator_TableVarName="tabledsdtPorcEficienciaMaquinas_LOG" msprop:Generator_TablePropName="dsdtPorcEficienciaMaquinas_LOG" msprop:Generator_RowDeletingName="dsdtPorcEficienciaMaquinas_LOGRowDeleting" msprop:Generator_RowChangingName="dsdtPorcEficienciaMaquinas_LOGRowChanging" msprop:Generator_RowEvHandlerName="dsdtPorcEficienciaMaquinas_LOGRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtPorcEficienciaMaquinas_LOGRowDeleted" msprop:Generator_UserTableName="dsdtPorcEficienciaMaquinas_LOG" msprop:Generator_RowChangedName="dsdtPorcEficienciaMaquinas_LOGRowChanged" msprop:Generator_RowEvArgName="dsdtPorcEficienciaMaquinas_LOGRowChangeEvent" msprop:Generator_RowClassName="dsdtPorcEficienciaMaquinas_LOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+              <xs:element name="Porcentaje" msprop:Generator_ColumnVarNameInTable="columnPorcentaje" msprop:Generator_ColumnPropNameInRow="Porcentaje" msprop:Generator_ColumnPropNameInTable="PorcentajeColumn" msprop:Generator_UserColumnName="Porcentaje" type="xs:decimal" />
+              <xs:element name="Bit_CreacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_CreacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_CreacionFechaColumn" msprop:Generator_UserColumnName="Bit_CreacionFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bit_CreacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_CreacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_CreacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_CreacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

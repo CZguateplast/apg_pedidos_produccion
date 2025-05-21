@@ -1,0 +1,3 @@
+﻿Public Class xrpt_Desviacion_ProduccionEnsamble
+
+End Class

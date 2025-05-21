@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTemporal_Produccion" targetNamespace="http://tempuri.org/dsTemporal_Produccion.xsd" xmlns:mstns="http://tempuri.org/dsTemporal_Produccion.xsd" xmlns="http://tempuri.org/dsTemporal_Produccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTemporal_Produccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTemporal_Produccion" msprop:Generator_UserDSName="dsTemporal_Produccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtTemporal_ProduccionPlaneada" msprop:Generator_TableClassName="dsdtTemporal_ProduccionPlaneadaDataTable" msprop:Generator_TableVarName="tabledsdtTemporal_ProduccionPlaneada" msprop:Generator_RowChangedName="dsdtTemporal_ProduccionPlaneadaRowChanged" msprop:Generator_TablePropName="dsdtTemporal_ProduccionPlaneada" msprop:Generator_RowDeletingName="dsdtTemporal_ProduccionPlaneadaRowDeleting" msprop:Generator_RowChangingName="dsdtTemporal_ProduccionPlaneadaRowChanging" msprop:Generator_RowEvHandlerName="dsdtTemporal_ProduccionPlaneadaRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTemporal_ProduccionPlaneadaRowDeleted" msprop:Generator_RowClassName="dsdtTemporal_ProduccionPlaneadaRow" msprop:Generator_UserTableName="dsdtTemporal_ProduccionPlaneada" msprop:Generator_RowEvArgName="dsdtTemporal_ProduccionPlaneadaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumOrden" msprop:Generator_ColumnVarNameInTable="columnNumOrden" msprop:Generator_ColumnPropNameInRow="NumOrden" msprop:Generator_ColumnPropNameInTable="NumOrdenColumn" msprop:Generator_UserColumnName="NumOrden" type="xs:int" />
+              <xs:element name="Fecha" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Diferencia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDiferencia" msprop:Generator_ColumnPropNameInRow="Diferencia" msprop:Generator_ColumnPropNameInTable="DiferenciaColumn" msprop:Generator_UserColumnName="Diferencia" type="xs:int" minOccurs="0" />
+              <xs:element name="Comentarios" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtTemporal_ProduccionLiberada" msprop:Generator_TableClassName="dsdtTemporal_ProduccionLiberadaDataTable" msprop:Generator_TableVarName="tabledsdtTemporal_ProduccionLiberada" msprop:Generator_TablePropName="dsdtTemporal_ProduccionLiberada" msprop:Generator_RowDeletingName="dsdtTemporal_ProduccionLiberadaRowDeleting" msprop:Generator_RowChangingName="dsdtTemporal_ProduccionLiberadaRowChanging" msprop:Generator_RowEvHandlerName="dsdtTemporal_ProduccionLiberadaRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTemporal_ProduccionLiberadaRowDeleted" msprop:Generator_UserTableName="dsdtTemporal_ProduccionLiberada" msprop:Generator_RowChangedName="dsdtTemporal_ProduccionLiberadaRowChanged" msprop:Generator_RowEvArgName="dsdtTemporal_ProduccionLiberadaRowChangeEvent" msprop:Generator_RowClassName="dsdtTemporal_ProduccionLiberadaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumOrden" msprop:Generator_ColumnVarNameInTable="columnNumOrden" msprop:Generator_ColumnPropNameInRow="NumOrden" msprop:Generator_ColumnPropNameInTable="NumOrdenColumn" msprop:Generator_UserColumnName="NumOrden" type="xs:int" />
+              <xs:element name="Fecha" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Diferencia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDiferencia" msprop:Generator_ColumnPropNameInRow="Diferencia" msprop:Generator_ColumnPropNameInTable="DiferenciaColumn" msprop:Generator_UserColumnName="Diferencia" type="xs:int" minOccurs="0" />
+              <xs:element name="Comentarios" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtTemporal_ProduccionPlaneada" />
+      <xs:field xpath="mstns:NumOrden" />
+    </xs:unique>
+    <xs:unique name="dsdtTemporal_ProduccionLiberada_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtTemporal_ProduccionLiberada" />
+      <xs:field xpath="mstns:NumOrden" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

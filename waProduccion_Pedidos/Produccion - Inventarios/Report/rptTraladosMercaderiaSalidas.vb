@@ -1,0 +1,3 @@
+﻿Public Class rptTraladosMercaderiaSalidas
+
+End Class

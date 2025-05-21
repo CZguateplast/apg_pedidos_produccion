@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTemporal_Stock" targetNamespace="http://tempuri.org/dsTemporal_Stock.xsd" xmlns:mstns="http://tempuri.org/dsTemporal_Stock.xsd" xmlns="http://tempuri.org/dsTemporal_Stock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTemporal_Stock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTemporal_Stock" msprop:Generator_UserDSName="dsTemporal_Stock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtTemporal_Stock" msprop:Generator_TableClassName="dsdtTemporal_StockDataTable" msprop:Generator_TableVarName="tabledsdtTemporal_Stock" msprop:Generator_TablePropName="dsdtTemporal_Stock" msprop:Generator_RowDeletingName="dsdtTemporal_StockRowDeleting" msprop:Generator_RowChangingName="dsdtTemporal_StockRowChanging" msprop:Generator_RowEvHandlerName="dsdtTemporal_StockRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTemporal_StockRowDeleted" msprop:Generator_UserTableName="dsdtTemporal_Stock" msprop:Generator_RowChangedName="dsdtTemporal_StockRowChanged" msprop:Generator_RowEvArgName="dsdtTemporal_StockRowChangeEvent" msprop:Generator_RowClassName="dsdtTemporal_StockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeLinea" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDeLinea" msprop:Generator_ColumnPropNameInRow="DeLinea" msprop:Generator_ColumnPropNameInTable="DeLineaColumn" msprop:Generator_UserColumnName="DeLinea" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bodega" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBodega" msprop:Generator_ColumnPropNameInRow="Bodega" msprop:Generator_ColumnPropNameInTable="BodegaColumn" msprop:Generator_UserColumnName="Bodega" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock" msdata:ReadOnly="true" msdata:Caption="Existencia" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

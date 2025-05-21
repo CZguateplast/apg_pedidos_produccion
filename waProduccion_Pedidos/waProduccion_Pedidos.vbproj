@@ -1,0 +1,2775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2A6B088-F661-4855-A03D-410B2ADE020C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>waProduccion_Pedidos.My.MyApplication</StartupObject>
+    <RootNamespace>waProduccion_Pedidos</RootNamespace>
+    <AssemblyName>waProduccion_Pedidos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\BOD-EJPEREZ\Desktop\PruebaPublisher\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>waProduccion_Pedidos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>waProduccion_Pedidos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Produccion_Icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>826EE6AE15710EAEF406089647EB6EF994BA66B3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>waProduccion_Pedidos_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.5.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.Designer.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.2.Win, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Drawing, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.DocumentViewer.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Docking.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.PdfViewer.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Win, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Reporting.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MailKit, Version=4.12.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.4.12.0\lib\netstandard2.0\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.0\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.12.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.12.0\lib\netstandard2.0\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.8.0.2\lib\netstandard2.0\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\netstandard2.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Cng.5.0.0\lib\net461\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.1\lib\netstandard2.0\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.8.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APGProduccionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APGProduccionDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="APGProduccionDataSet.vb">
+      <DependentUpon>APGProduccionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClasesPersonalizadas\ToastForm.Designer.vb">
+      <DependentUpon>ToastForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClasesPersonalizadas\ToastForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mGeneral\mFunc_TrasladoAlmacen.vb" />
+    <Compile Include="Produccion - Almacen\DataSet\dsOrdenEnsambleProduccion.vb">
+      <DependentUpon>dsOrdenEnsambleProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Reportes\xrptResumenPedido.Designer.vb">
+      <DependentUpon>xrptResumenPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Reportes\xrptResumenPedido.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\DataSet\dsEnsambleCalculadora.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEnsambleCalculadora.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\DataSet\dsEnsambleImpresion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEnsambleImpresion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\DataSet\dsEnsambleOrdenImpresion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEnsambleOrdenImpresion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleCalculadora.Designer.vb">
+      <DependentUpon>frmEnsambleCalculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleCalculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleImpresion.Designer.vb">
+      <DependentUpon>frmEnsambleImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleOrdenImpresion.Designer.vb">
+      <DependentUpon>frmEnsambleOrdenImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Form\frmEnsambleOrdenImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleCalculadora.Designer.vb">
+      <DependentUpon>xrptEnsambleCalculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleCalculadora.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleDetalle.Designer.vb">
+      <DependentUpon>xrptEnsambleDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleDetalle.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleImpresion.Designer.vb">
+      <DependentUpon>xrptEnsambleImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleImpresion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleListaMateriales.Designer.vb">
+      <DependentUpon>xrptEnsambleListaMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleListaMateriales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleResumen.Designer.vb">
+      <DependentUpon>xrptEnsambleResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Report\xrptEnsambleResumen.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Xreport\xrptOrdenImpresionEnsamble.Designer.vb">
+      <DependentUpon>xrptOrdenImpresionEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Ensamble\Xreport\xrptOrdenImpresionEnsamble.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsListaMaterialEliminarCompleto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListaMaterialEliminarCompleto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\fmrTrasladoDeInventario.Designer.vb">
+      <DependentUpon>fmrTrasladoDeInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\fmrTrasladoDeInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmAjustedeInvetario.Designer.vb">
+      <DependentUpon>frmAjustedeInvetario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmAjustedeInvetario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmCodigoBarras.Designer.vb">
+      <DependentUpon>frmCodigoBarras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmCodigoBarras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmConsultaTransferenciasBodega.Designer.vb">
+      <DependentUpon>frmConsultaTransferenciasBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmConsultaTransferenciasBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\FrmCuadroProgreso.Designer.vb">
+      <DependentUpon>FrmCuadroProgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\FrmCuadroProgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaMaterialEliminarCompleto.Designer.vb">
+      <DependentUpon>frmListaMaterialEliminarCompleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaMaterialEliminarCompleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod - Menu\waitDetalle.Designer.vb">
+      <DependentUpon>waitDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prod - Menu\waitDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsCargarDatosProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCargarDatosProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametrosPendientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametrosPendientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque_Editar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Empaque_Editar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Fotografias.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Fotografias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Procedimientos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Procedimientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Procedimientos.vb">
+      <DependentUpon>dsParametros_Procedimientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\CodigosNuevos\frmCodigos_Menu.Designer.vb">
+      <DependentUpon>frmCodigos_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\CodigosNuevos\frmCodigos_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmCargarDatosProduccion.Designer.vb">
+      <DependentUpon>frmCargarDatosProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmCargarDatosProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametrosPendientes.Designer.vb">
+      <DependentUpon>frmParametrosPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametrosPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Empaque_Editar.Designer.vb">
+      <DependentUpon>frmParametros_Empaque_Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Empaque_Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Fotografias.Designer.vb">
+      <DependentUpon>frmParametros_Fotografias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Fotografias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Procedimientos.Designer.vb">
+      <DependentUpon>frmParametros_Procedimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Procedimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Produccion1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmParametros_Produccion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptParametros_AdvertenciasTrabajo.Designer.vb">
+      <DependentUpon>xrptParametros_AdvertenciasTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptParametros_AdvertenciasTrabajo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptParametros_InstruccionesTrabajo.Designer.vb">
+      <DependentUpon>xrptParametros_InstruccionesTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptParametros_InstruccionesTrabajo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Dashboard\dashTrabajoMaquinas.Designer.vb">
+      <DependentUpon>dashTrabajoMaquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Dashboard\dashTrabajoMaquinas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsControlProduccion_Ingreso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsControlProduccion_Ingreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsParametros_Instrucciones.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Instrucciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsParametros_Instrucciones.vb">
+      <DependentUpon>dsParametros_Instrucciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Ingreso.Designer.vb">
+      <DependentUpon>frmControlProduccion_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen.Designer.vb">
+      <DependentUpon>frmPlanPrioridadesAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen_Hijos.Designer.vb">
+      <DependentUpon>frmPlanPrioridadesAlmacen_Hijos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen_Hijos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmProduccionCalendario.Designer.vb">
+      <DependentUpon>frmProduccionCalendario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmProduccionCalendario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\OutlookAppointmentForm.Designer.vb">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\OutlookAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\OutlookPrueba.Designer.vb">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\OutlookPrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\frmCodigosImpresion_XCodigo.Designer.vb">
+      <DependentUpon>frmCodigosImpresion_XCodigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\frmCodigosImpresion_XCodigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenesProduccionImpresionMateriales.Designer.vb">
+      <DependentUpon>xrptOrdenesProduccionImpresionMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenesProduccionImpresionMateriales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionComentarios.Designer.vb">
+      <DependentUpon>xrptOrdenProduccionComentarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionComentarios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion_Todas.Designer.vb">
+      <DependentUpon>xrptProgramacionProduccion_Todas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion_Todas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Reportes\dsReportes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Prod - Menu\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod - Menu\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod - Menu\frmPrueba.Designer.vb">
+      <DependentUpon>frmPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prod - Menu\frmPrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mGeneral\mDIAPI.vb" />
+    <Compile Include="mGeneral\mSeguridad.vb" />
+    <Compile Include="mGeneral\mSendEmail.vb" />
+    <Compile Include="Prod - Menu\mVariales.vb" />
+    <Compile Include="Produccion - Almacen\DataSet\dsAnalisisNecesidades.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAnalisisNecesidades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsOrdenEnsambleProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrdenEnsambleProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsOrdenLista.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrdenLista.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmAnalisisNecesidades.Designer.vb">
+      <DependentUpon>frmAnalisisNecesidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmAnalisisNecesidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenEnsambleProduccion.Designer.vb">
+      <DependentUpon>frmOrdenEnsambleProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenEnsambleProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenLista.Designer.vb">
+      <DependentUpon>frmOrdenLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsArticulosActualizacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsArticulosActualizacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsListaPreciosActualizar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListaPreciosActualizar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsListaPreciosClientes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListaPreciosClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsListaPreciosClientes.vb">
+      <DependentUpon>dsListaPreciosClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsListaPreciosCostosActualizar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListaPreciosCostosActualizar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmArticulosActualizacion.Designer.vb">
+      <DependentUpon>frmArticulosActualizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmArticulosActualizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosActualizar.Designer.vb">
+      <DependentUpon>frmListaPreciosActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosClientes.Designer.vb">
+      <DependentUpon>frmListaPreciosClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosCostosActualizar.Designer.vb">
+      <DependentUpon>frmListaPreciosCostosActualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmListaPreciosCostosActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmMercanciasSalidasImpresion.Designer.vb">
+      <DependentUpon>frmMercanciasSalidasImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmMercanciasSalidasImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Report\rptTraladosMercaderiaSalidas.Designer.vb">
+      <DependentUpon>rptTraladosMercaderiaSalidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Report\rptTraladosMercaderiaSalidas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsAsigCP_Moldes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsigCP_Moldes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsigMoldes_Maquinas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas_Agregar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsigMoldes_Maquinas_Agregar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsAsignarComponentesMaquinas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsignarComponentesMaquinas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsCodigosProducidos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCodigosProducidos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMantenimientoArticulos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMantenimientoArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMantenimientoArticulos.vb">
+      <DependentUpon>dsMantenimientoArticulos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMantenimientoColores.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMantenimientoColores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMaquinas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMaquinas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMoldes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMoldes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsMoldes.vb">
+      <DependentUpon>dsMoldes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Empaque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Ensambles.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Ensambles.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\DataSet\dsParametros_Produccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsParametros_Produccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\AsignarComponentesMaquinas.Designer.vb">
+      <DependentUpon>AsignarComponentesMaquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\AsignarComponentesMaquinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarCodigosProducidosMoldes.Designer.vb">
+      <DependentUpon>frmAsignarCodigosProducidosMoldes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarCodigosProducidosMoldes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas_Old.Designer.vb">
+      <DependentUpon>frmAsignarMoldesMaquinas_Old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas_Old.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas.Designer.vb">
+      <DependentUpon>frmAsignarMoldesMaquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMantenimientoArticulos.Designer.vb">
+      <DependentUpon>frmMantenimientoArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMantenimientoArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMantenimientoColores.Designer.vb">
+      <DependentUpon>frmMantenimientoColores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMantenimientoColores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMaquinas.Designer.vb">
+      <DependentUpon>frmMaquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMaquinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMoldes.Designer.vb">
+      <DependentUpon>frmMoldes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmMoldes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsCerrarAR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCerrarAR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsImpresionOrden.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsImpresionOrden.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsIngresoAnalisisCP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIngresoAnalisisCP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsIngresoOrden.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIngresoOrden.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsIngresoOrden.vb">
+      <DependentUpon>dsIngresoOrden.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\DataSet\dsPedidoIngreso.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPedidoIngreso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenCerrar.Designer.vb">
+      <DependentUpon>frmOrdenCerrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenCerrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Produccion.Designer.vb">
+      <DependentUpon>frmParametros_Produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Produccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Ensambles.Designer.vb">
+      <DependentUpon>frmParametros_Ensambles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Form\frmParametros_Ensambles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptMantenimientoColores.Designer.vb">
+      <DependentUpon>xrptMantenimientoColores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Mantenimiento\Report\xrptMantenimientoColores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsControlProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsControlProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsControlProduccion.vb">
+      <DependentUpon>dsControlProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsControlProduccionDetalle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsControlProduccionDetalle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsControlProduccion_Resumen.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsControlProduccion_Resumen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsEmergenciasProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmergenciasProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsEtiquetasSolicitud.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEtiquetasSolicitud.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsOrdenesProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrdenesProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsOrdenProduccionImpresion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrdenProduccionImpresion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsOrdenProduccionImpresion.vb">
+      <DependentUpon>dsOrdenProduccionImpresion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsProgramacionProduccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProgramacionProduccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsReciboProduccionEnsamble.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReciboProduccionEnsamble.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsTrabajoEnMaquinas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTrabajoEnMaquinas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Detalle.Designer.vb">
+      <DependentUpon>frmControlProduccion_Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Resumen.Designer.vb">
+      <DependentUpon>frmControlProduccion_Resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion_Resumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmEmergenciasProduccion.Designer.vb">
+      <DependentUpon>frmEmergenciasProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmEmergenciasProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmEtiquetasSolicitud.Designer.vb">
+      <DependentUpon>frmEtiquetasSolicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmEtiquetasSolicitud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionDisponibles.Designer.vb">
+      <DependentUpon>frmOrdenProduccionDisponibles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionDisponibles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionEnsamble.Designer.vb">
+      <DependentUpon>frmOrdenProduccionEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionEnsamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionImpresion.Designer.vb">
+      <DependentUpon>frmOrdenProduccionImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmOrdenProduccionImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmProgramacionProduccion.Designer.vb">
+      <DependentUpon>frmProgramacionProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmProgramacionProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion.Designer.vb">
+      <DependentUpon>frmControlProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmControlProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptEmergenciasProduccion.Designer.vb">
+      <DependentUpon>xrptEmergenciasProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptEmergenciasProduccion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptEtiquetasSolicitud.Designer.vb">
+      <DependentUpon>xrptEtiquetasSolicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptEtiquetasSolicitud.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion.Designer.vb">
+      <DependentUpon>xrptProgramacionProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccionFinal.Designer.vb">
+      <DependentUpon>xrptProgramacionProduccionFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptProgramacionProduccionFinal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Reportes\xrpt_Desviacion_ProduccionEnsamble.Designer.vb">
+      <DependentUpon>xrpt_Desviacion_ProduccionEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Reportes\xrpt_Desviacion_ProduccionEnsamble.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Reportes\xrpt_OrdenesDirectoSAP.Designer.vb">
+      <DependentUpon>xrpt_OrdenesDirectoSAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Reportes\xrpt_OrdenesDirectoSAP.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prod - Menu\Prueba2.Designer.vb">
+      <DependentUpon>Prueba2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prod - Menu\Prueba2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="TMP\DataSet\dsTemporal_ColorDetalle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ColorDetalle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_ListaMateriales.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ListaMateriales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_MaquinasParaTrabajar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_MaquinasParaTrabajar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_MoldesDeCodigo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_MoldesDeCodigo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_OrdenesProduccionEnsambleDetalle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_OrdenesProduccionEnsambleDetalle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_ParametrosDefault.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ParametrosDefault.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Prioridades.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_Prioridades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_ProduccionColores_Padre.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ProduccionColores_Padre.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_ProgramacionGrafica.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ProgramacionGrafica.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_TandasTrabajo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_TandasTrabajo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ColorDetalle.Designer.vb">
+      <DependentUpon>frmTemporal_ColorDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ColorDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_FichaArticulo.Designer.vb">
+      <DependentUpon>frmTemporal_FichaArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_FichaArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ListaMateriales.Designer.vb">
+      <DependentUpon>frmTemporal_ListaMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ListaMateriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_MaquinasParaTrabajar.Designer.vb">
+      <DependentUpon>frmTemporal_MaquinasParaTrabajar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_MaquinasParaTrabajar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_MoldesDeCodigo.Designer.vb">
+      <DependentUpon>frmTemporal_MoldesDeCodigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_MoldesDeCodigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_OrdenesProduccionEnsambleDetalle.Designer.vb">
+      <DependentUpon>frmTemporal_OrdenesProduccionEnsambleDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_OrdenesProduccionEnsambleDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ParametrosDefault.Designer.vb">
+      <DependentUpon>frmTemporal_ParametrosDefault.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ParametrosDefault.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Prioridades.Designer.vb">
+      <DependentUpon>frmTemporal_Prioridades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Prioridades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmReciboProduccionEnsamble.Designer.vb">
+      <DependentUpon>frmReciboProduccionEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmReciboProduccionEnsamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresion.Designer.vb">
+      <DependentUpon>xrptOrdenProduccionImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionListaMat.Designer.vb">
+      <DependentUpon>xrptOrdenProduccionImpresionListaMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionListaMat.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionResumen.Designer.vb">
+      <DependentUpon>xrptOrdenProduccionImpresionResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionResumen.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionListaMateriales.Designer.vb">
+      <DependentUpon>xrptOrdenProduccionListaMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Xreport\xrptOrdenProduccionListaMateriales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigoArticuloBuscar.Designer.vb">
+      <DependentUpon>frmTemporal_CodigoArticuloBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigoArticuloBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenImpresion.Designer.vb">
+      <DependentUpon>frmOrdenImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenProduccion.Designer.vb">
+      <DependentUpon>frmOrdenProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenEnsamble.Designer.vb">
+      <DependentUpon>frmOrdenEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmOrdenEnsamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Module\frmResultadoOrdenesIngresadas.Designer.vb">
+      <DependentUpon>frmResultadoOrdenesIngresadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Module\frmResultadoOrdenesIngresadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmAnalisisArticulos.Designer.vb">
+      <DependentUpon>frmAnalisisArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Form\frmAnalisisArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mGeneral\mConexion.vb" />
+    <Compile Include="mGeneral\mFunciones.vb" />
+    <Compile Include="mGeneral\mSQLInsert.vb" />
+    <Compile Include="mGeneral\mMensajes.vb" />
+    <Compile Include="mGeneral\mSQLSelect.vb" />
+    <Compile Include="mGeneral\mSQLDelete.vb" />
+    <Compile Include="mGeneral\mSQLUpdate.vb" />
+    <Compile Include="Prod - Menu\MD5.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Module\modPedidosIngreso.vb" />
+    <Compile Include="Produccion - Almacen\Reportes\xrptImpresionOrden.Designer.vb">
+      <DependentUpon>xrptImpresionOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Almacen\Reportes\xrptImpresionOrden.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\DataSet\dsPorcEficienciaMaquinas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPorcEficienciaMaquinas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia_LOG.Designer.vb">
+      <DependentUpon>frmMaquinasPorcentajeEficiencia_LOG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia_LOG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia.Designer.vb">
+      <DependentUpon>frmMaquinasPorcentajeEficiencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\DataSet\dsTrasladosMercaderia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTrasladosMercaderia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmMercanciasSalidas.Designer.vb">
+      <DependentUpon>frmMercanciasSalidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Inventarios\Form\frmMercanciasSalidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPL\splCargando.Designer.vb">
+      <DependentUpon>splCargando.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SPL\splCargando.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPL\splPrincipal.Designer.vb">
+      <DependentUpon>splPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SPL\splPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPL\splEsperar.Designer.vb">
+      <DependentUpon>splEsperar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SPL\splEsperar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsAnalisisVenta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAnalisisVenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsAnalisisVenta.vb">
+      <DependentUpon>dsAnalisisVenta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_ArticulosOcupados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_ArticulosOcupados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_DeudaCampana.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_DeudaCampana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_DeudaEnsamble.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_DeudaEnsamble.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_DeudaProyeccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_DeudaProyeccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_DeudaRol.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_DeudaRol.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Ensamble.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_Ensamble.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Ensamble.vb">
+      <DependentUpon>dsTemporal_Ensamble.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_OrdenesCerradas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_OrdenesCerradas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Produccion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_Produccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Recibos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_Recibos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\DataSet\dsTemporal_Stock.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTemporal_Stock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_AnalisisVenta.Designer.vb">
+      <DependentUpon>frmTemporal_AnalisisVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_AnalisisVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ArticulosOcupados.Designer.vb">
+      <DependentUpon>frmTemporal_ArticulosOcupados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ArticulosOcupados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigosArticulos_Nuevos.Designer.vb">
+      <DependentUpon>frmTemporal_CodigosArticulos_Nuevos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigosArticulos_Nuevos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigosProducidos_Nuevos.Designer.vb">
+      <DependentUpon>frmTemporal_CodigosProducidos_Nuevos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_CodigosProducidos_Nuevos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaCampana.Designer.vb">
+      <DependentUpon>frmTemporal_DeudaCampana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaCampana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaProyeccion.Designer.vb">
+      <DependentUpon>frmTemporal_DeudaProyeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaProyeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaRol.Designer.vb">
+      <DependentUpon>frmTemporal_DeudaRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Ensamble.Designer.vb">
+      <DependentUpon>frmTemporal_Ensamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Ensamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaEnsamble.Designer.vb">
+      <DependentUpon>frmTemporal_DeudaEnsamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_DeudaEnsamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Lista.Designer.vb">
+      <DependentUpon>frmTemporal_Lista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Lista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_OrdenesCerradasResultado.Designer.vb">
+      <DependentUpon>frmTemporal_OrdenesCerradasResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_OrdenesCerradasResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Produccion.Designer.vb">
+      <DependentUpon>frmTemporal_Produccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Produccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ProduccionColores_Padre.Designer.vb">
+      <DependentUpon>frmTemporal_ProduccionColores_Padre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ProduccionColores_Padre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ProgramacionGrafica.Designer.vb">
+      <DependentUpon>frmTemporal_ProgramacionGrafica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_ProgramacionGrafica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Recibos.Designer.vb">
+      <DependentUpon>frmTemporal_Recibos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Recibos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Stock.Designer.vb">
+      <DependentUpon>frmTemporal_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmTrabajoEnMaquinas.Designer.vb">
+      <DependentUpon>frmTrabajoEnMaquinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion - Produccion\Form\frmTrabajoEnMaquinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_TandasTrabajo.Designer.vb">
+      <DependentUpon>frmTemporal_TandasTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Form\frmTemporal_TandasTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMP\Xreport\xrptTemporal_OrdenesCerradas.Designer.vb">
+      <DependentUpon>xrptTemporal_OrdenesCerradas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Xreport\xrptTemporal_OrdenesCerradas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TMP\Xreport\xrptTemporal_OrdenesLiberadas.Designer.vb">
+      <DependentUpon>xrptTemporal_OrdenesLiberadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TMP\Xreport\xrptTemporal_OrdenesLiberadas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Prod - Menu\xrptEtiquetas.Designer.vb">
+      <DependentUpon>xrptEtiquetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prod - Menu\xrptEtiquetas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Prod - Menu\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod - Menu\frmPrueba.resx">
+      <DependentUpon>frmPrueba.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmAnalisisNecesidades.resx">
+      <DependentUpon>frmAnalisisNecesidades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenEnsambleProduccion.resx">
+      <DependentUpon>frmOrdenEnsambleProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenLista.resx">
+      <DependentUpon>frmOrdenLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Reportes\xrptResumenPedido.resx">
+      <DependentUpon>xrptResumenPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Form\frmEnsambleCalculadora.resx">
+      <DependentUpon>frmEnsambleCalculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Form\frmEnsambleImpresion.resx">
+      <DependentUpon>frmEnsambleImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Form\frmEnsambleOrdenImpresion.resx">
+      <DependentUpon>frmEnsambleOrdenImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Report\xrptEnsambleCalculadora.resx">
+      <DependentUpon>xrptEnsambleCalculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Report\xrptEnsambleDetalle.resx">
+      <DependentUpon>xrptEnsambleDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Report\xrptEnsambleImpresion.resx">
+      <DependentUpon>xrptEnsambleImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Report\xrptEnsambleListaMateriales.resx">
+      <DependentUpon>xrptEnsambleListaMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Report\xrptEnsambleResumen.resx">
+      <DependentUpon>xrptEnsambleResumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Ensamble\Xreport\xrptOrdenImpresionEnsamble.resx">
+      <DependentUpon>xrptOrdenImpresionEnsamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\fmrTrasladoDeInventario.resx">
+      <DependentUpon>fmrTrasladoDeInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmAjustedeInvetario.resx">
+      <DependentUpon>frmAjustedeInvetario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmArticulosActualizacion.resx">
+      <DependentUpon>frmArticulosActualizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmCodigoBarras.resx">
+      <DependentUpon>frmCodigoBarras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmConsultaTransferenciasBodega.resx">
+      <DependentUpon>frmConsultaTransferenciasBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\FrmCuadroProgreso.resx">
+      <DependentUpon>FrmCuadroProgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmListaMaterialEliminarCompleto.resx">
+      <DependentUpon>frmListaMaterialEliminarCompleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmListaPreciosActualizar.resx">
+      <DependentUpon>frmListaPreciosActualizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmListaPreciosClientes.resx">
+      <DependentUpon>frmListaPreciosClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmListaPreciosCostosActualizar.resx">
+      <DependentUpon>frmListaPreciosCostosActualizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmMercanciasSalidasImpresion.resx">
+      <DependentUpon>frmMercanciasSalidasImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod - Menu\waitDetalle.resx">
+      <DependentUpon>waitDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Report\rptTraladosMercaderiaSalidas.resx">
+      <DependentUpon>rptTraladosMercaderiaSalidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\AsignarComponentesMaquinas.resx">
+      <DependentUpon>AsignarComponentesMaquinas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\CodigosNuevos\frmCodigos_Menu.resx">
+      <DependentUpon>frmCodigos_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmAsignarCodigosProducidosMoldes.resx">
+      <DependentUpon>frmAsignarCodigosProducidosMoldes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas_Old.resx">
+      <DependentUpon>frmAsignarMoldesMaquinas_Old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmAsignarMoldesMaquinas.resx">
+      <DependentUpon>frmAsignarMoldesMaquinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmCargarDatosProduccion.resx">
+      <DependentUpon>frmCargarDatosProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmMantenimientoArticulos.resx">
+      <DependentUpon>frmMantenimientoArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmMantenimientoColores.resx">
+      <DependentUpon>frmMantenimientoColores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmMaquinas.resx">
+      <DependentUpon>frmMaquinas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmMoldes.resx">
+      <DependentUpon>frmMoldes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenCerrar.resx">
+      <DependentUpon>frmOrdenCerrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametrosPendientes.resx">
+      <DependentUpon>frmParametrosPendientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametros_Empaque_Editar.resx">
+      <DependentUpon>frmParametros_Empaque_Editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametros_Fotografias.resx">
+      <DependentUpon>frmParametros_Fotografias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametros_Procedimientos.resx">
+      <DependentUpon>frmParametros_Procedimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametros_Produccion.resx">
+      <DependentUpon>frmParametros_Produccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmParametros_Produccion1.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Form\frmParametros_Ensambles.resx">
+      <DependentUpon>frmParametros_Ensambles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Report\xrptMantenimientoColores.resx">
+      <DependentUpon>xrptMantenimientoColores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Report\xrptParametros_AdvertenciasTrabajo.resx">
+      <DependentUpon>xrptParametros_AdvertenciasTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Mantenimiento\Report\xrptParametros_InstruccionesTrabajo.resx">
+      <DependentUpon>xrptParametros_InstruccionesTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Dashboard\dashTrabajoMaquinas.resx">
+      <DependentUpon>dashTrabajoMaquinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmControlProduccion_Detalle.resx">
+      <DependentUpon>frmControlProduccion_Detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmControlProduccion_Ingreso.resx">
+      <DependentUpon>frmControlProduccion_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmControlProduccion_Resumen.resx">
+      <DependentUpon>frmControlProduccion_Resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmEmergenciasProduccion.resx">
+      <DependentUpon>frmEmergenciasProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmEtiquetasSolicitud.resx">
+      <DependentUpon>frmEtiquetasSolicitud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmOrdenProduccionDisponibles.resx">
+      <DependentUpon>frmOrdenProduccionDisponibles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmOrdenProduccionEnsamble.resx">
+      <DependentUpon>frmOrdenProduccionEnsamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmOrdenProduccionImpresion.resx">
+      <DependentUpon>frmOrdenProduccionImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen.resx">
+      <DependentUpon>frmPlanPrioridadesAlmacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmPlanPrioridadesAlmacen_Hijos.resx">
+      <DependentUpon>frmPlanPrioridadesAlmacen_Hijos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmProduccionCalendario.resx">
+      <DependentUpon>frmProduccionCalendario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmProgramacionProduccion.resx">
+      <DependentUpon>frmProgramacionProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmControlProduccion.resx">
+      <DependentUpon>frmControlProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookAppointmentForm.de.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookAppointmentForm.es.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookAppointmentForm.ja.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookAppointmentForm.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookAppointmentForm.ru.resx">
+      <DependentUpon>OutlookAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookPrueba.de.resx">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookPrueba.es.resx">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookPrueba.ja.resx">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookPrueba.resx">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\OutlookPrueba.ru.resx">
+      <DependentUpon>OutlookPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\frmCodigosImpresion_XCodigo.resx">
+      <DependentUpon>frmCodigosImpresion_XCodigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptEmergenciasProduccion.resx">
+      <DependentUpon>xrptEmergenciasProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptEtiquetasSolicitud.resx">
+      <DependentUpon>xrptEtiquetasSolicitud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenesProduccionImpresionMateriales.resx">
+      <DependentUpon>xrptOrdenesProduccionImpresionMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenProduccionComentarios.resx">
+      <DependentUpon>xrptOrdenProduccionComentarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion.resx">
+      <DependentUpon>xrptProgramacionProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptProgramacionProduccionFinal.resx">
+      <DependentUpon>xrptProgramacionProduccionFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptProgramacionProduccion_Todas.resx">
+      <DependentUpon>xrptProgramacionProduccion_Todas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Reportes\xrpt_Desviacion_ProduccionEnsamble.resx">
+      <DependentUpon>xrpt_Desviacion_ProduccionEnsamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Reportes\xrpt_OrdenesDirectoSAP.resx">
+      <DependentUpon>xrpt_OrdenesDirectoSAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod - Menu\Prueba2.resx">
+      <DependentUpon>Prueba2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ColorDetalle.resx">
+      <DependentUpon>frmTemporal_ColorDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_FichaArticulo.resx">
+      <DependentUpon>frmTemporal_FichaArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ListaMateriales.resx">
+      <DependentUpon>frmTemporal_ListaMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_MaquinasParaTrabajar.resx">
+      <DependentUpon>frmTemporal_MaquinasParaTrabajar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_MoldesDeCodigo.resx">
+      <DependentUpon>frmTemporal_MoldesDeCodigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_OrdenesProduccionEnsambleDetalle.resx">
+      <DependentUpon>frmTemporal_OrdenesProduccionEnsambleDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ParametrosDefault.resx">
+      <DependentUpon>frmTemporal_ParametrosDefault.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Prioridades.resx">
+      <DependentUpon>frmTemporal_Prioridades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmReciboProduccionEnsamble.resx">
+      <DependentUpon>frmReciboProduccionEnsamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresion.resx">
+      <DependentUpon>xrptOrdenProduccionImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionListaMat.resx">
+      <DependentUpon>xrptOrdenProduccionImpresionListaMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenProduccionImpresionResumen.resx">
+      <DependentUpon>xrptOrdenProduccionImpresionResumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Xreport\xrptOrdenProduccionListaMateriales.resx">
+      <DependentUpon>xrptOrdenProduccionListaMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_CodigoArticuloBuscar.resx">
+      <DependentUpon>frmTemporal_CodigoArticuloBuscar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenImpresion.resx">
+      <DependentUpon>frmOrdenImpresion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenProduccion.resx">
+      <DependentUpon>frmOrdenProduccion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmOrdenEnsamble.resx">
+      <DependentUpon>frmOrdenEnsamble.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Module\frmResultadoOrdenesIngresadas.resx">
+      <DependentUpon>frmResultadoOrdenesIngresadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Form\frmAnalisisArticulos.resx">
+      <DependentUpon>frmAnalisisArticulos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Almacen\Reportes\xrptImpresionOrden.resx">
+      <DependentUpon>xrptImpresionOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia_LOG.resx">
+      <DependentUpon>frmMaquinasPorcentajeEficiencia_LOG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmMaquinasPorcentajeEficiencia.resx">
+      <DependentUpon>frmMaquinasPorcentajeEficiencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Inventarios\Form\frmMercanciasSalidas.resx">
+      <DependentUpon>frmMercanciasSalidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPL\splCargando.resx">
+      <DependentUpon>splCargando.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPL\splPrincipal.resx">
+      <DependentUpon>splPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPL\splEsperar.resx">
+      <DependentUpon>splEsperar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_AnalisisVenta.resx">
+      <DependentUpon>frmTemporal_AnalisisVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ArticulosOcupados.resx">
+      <DependentUpon>frmTemporal_ArticulosOcupados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_CodigosArticulos_Nuevos.resx">
+      <DependentUpon>frmTemporal_CodigosArticulos_Nuevos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_CodigosProducidos_Nuevos.resx">
+      <DependentUpon>frmTemporal_CodigosProducidos_Nuevos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_DeudaCampana.resx">
+      <DependentUpon>frmTemporal_DeudaCampana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_DeudaProyeccion.resx">
+      <DependentUpon>frmTemporal_DeudaProyeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_DeudaRol.resx">
+      <DependentUpon>frmTemporal_DeudaRol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Ensamble.resx">
+      <DependentUpon>frmTemporal_Ensamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_DeudaEnsamble.resx">
+      <DependentUpon>frmTemporal_DeudaEnsamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Lista.resx">
+      <DependentUpon>frmTemporal_Lista.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_OrdenesCerradasResultado.resx">
+      <DependentUpon>frmTemporal_OrdenesCerradasResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Produccion.resx">
+      <DependentUpon>frmTemporal_Produccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ProduccionColores_Padre.resx">
+      <DependentUpon>frmTemporal_ProduccionColores_Padre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_ProgramacionGrafica.resx">
+      <DependentUpon>frmTemporal_ProgramacionGrafica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Recibos.resx">
+      <DependentUpon>frmTemporal_Recibos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_Stock.resx">
+      <DependentUpon>frmTemporal_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion - Produccion\Form\frmTrabajoEnMaquinas.resx">
+      <DependentUpon>frmTrabajoEnMaquinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Form\frmTemporal_TandasTrabajo.resx">
+      <DependentUpon>frmTemporal_TandasTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Xreport\xrptTemporal_OrdenesCerradas.resx">
+      <DependentUpon>xrptTemporal_OrdenesCerradas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\Xreport\xrptTemporal_OrdenesLiberadas.resx">
+      <DependentUpon>xrptTemporal_OrdenesLiberadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod - Menu\xrptEtiquetas.resx">
+      <DependentUpon>xrptEtiquetas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="APGProduccionDataSet.xsc">
+      <DependentUpon>APGProduccionDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="APGProduccionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>APGProduccionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="APGProduccionDataSet.xss">
+      <DependentUpon>APGProduccionDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleCalculadora.xsc">
+      <DependentUpon>dsEnsambleCalculadora.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleCalculadora.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEnsambleCalculadora.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleCalculadora.xss">
+      <DependentUpon>dsEnsambleCalculadora.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleImpresion.xsc">
+      <DependentUpon>dsEnsambleImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleImpresion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEnsambleImpresion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleImpresion.xss">
+      <DependentUpon>dsEnsambleImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleOrdenImpresion.xsc">
+      <DependentUpon>dsEnsambleOrdenImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleOrdenImpresion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEnsambleOrdenImpresion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Ensamble\DataSet\dsEnsambleOrdenImpresion.xss">
+      <DependentUpon>dsEnsambleOrdenImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaMaterialEliminarCompleto.xsc">
+      <DependentUpon>dsListaMaterialEliminarCompleto.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaMaterialEliminarCompleto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListaMaterialEliminarCompleto.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaMaterialEliminarCompleto.xss">
+      <DependentUpon>dsListaMaterialEliminarCompleto.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCargarDatosProduccion.xsc">
+      <DependentUpon>dsCargarDatosProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCargarDatosProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCargarDatosProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCargarDatosProduccion.xss">
+      <DependentUpon>dsCargarDatosProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametrosPendientes.xsc">
+      <DependentUpon>dsParametrosPendientes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametrosPendientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametrosPendientes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametrosPendientes.xss">
+      <DependentUpon>dsParametrosPendientes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque_Editar.xsc">
+      <DependentUpon>dsParametros_Empaque_Editar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque_Editar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Empaque_Editar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque_Editar.xss">
+      <DependentUpon>dsParametros_Empaque_Editar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Fotografias.xsc">
+      <DependentUpon>dsParametros_Fotografias.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Fotografias.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Fotografias.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Fotografias.xss">
+      <DependentUpon>dsParametros_Fotografias.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Procedimientos.xsc">
+      <DependentUpon>dsParametros_Procedimientos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Procedimientos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Procedimientos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Procedimientos.xss">
+      <DependentUpon>dsParametros_Procedimientos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Ingreso.xsc">
+      <DependentUpon>dsControlProduccion_Ingreso.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Ingreso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsControlProduccion_Ingreso.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Ingreso.xss">
+      <DependentUpon>dsControlProduccion_Ingreso.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsParametros_Instrucciones.xsc">
+      <DependentUpon>dsParametros_Instrucciones.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsParametros_Instrucciones.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Instrucciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsParametros_Instrucciones.xss">
+      <DependentUpon>dsParametros_Instrucciones.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Reportes\dsReportes.xsc">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Reportes\dsReportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Reportes\dsReportes.xss">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsAnalisisNecesidades.xsc">
+      <DependentUpon>dsAnalisisNecesidades.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsAnalisisNecesidades.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAnalisisNecesidades.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsAnalisisNecesidades.xss">
+      <DependentUpon>dsAnalisisNecesidades.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenEnsambleProduccion.xsc">
+      <DependentUpon>dsOrdenEnsambleProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenEnsambleProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrdenEnsambleProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenEnsambleProduccion.xss">
+      <DependentUpon>dsOrdenEnsambleProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenLista.xsc">
+      <DependentUpon>dsOrdenLista.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenLista.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrdenLista.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsOrdenLista.xss">
+      <DependentUpon>dsOrdenLista.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsArticulosActualizacion.xsc">
+      <DependentUpon>dsArticulosActualizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsArticulosActualizacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsArticulosActualizacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsArticulosActualizacion.xss">
+      <DependentUpon>dsArticulosActualizacion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosActualizar.xsc">
+      <DependentUpon>dsListaPreciosActualizar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosActualizar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListaPreciosActualizar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosActualizar.xss">
+      <DependentUpon>dsListaPreciosActualizar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosClientes.xsc">
+      <DependentUpon>dsListaPreciosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListaPreciosClientes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosClientes.xss">
+      <DependentUpon>dsListaPreciosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosCostosActualizar.xsc">
+      <DependentUpon>dsListaPreciosCostosActualizar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosCostosActualizar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListaPreciosCostosActualizar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsListaPreciosCostosActualizar.xss">
+      <DependentUpon>dsListaPreciosCostosActualizar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigCP_Moldes.xsc">
+      <DependentUpon>dsAsigCP_Moldes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigCP_Moldes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsigCP_Moldes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigCP_Moldes.xss">
+      <DependentUpon>dsAsigCP_Moldes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas.xsc">
+      <DependentUpon>dsAsigMoldes_Maquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsigMoldes_Maquinas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas.xss">
+      <DependentUpon>dsAsigMoldes_Maquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas_Agregar.xsc">
+      <DependentUpon>dsAsigMoldes_Maquinas_Agregar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas_Agregar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsigMoldes_Maquinas_Agregar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsigMoldes_Maquinas_Agregar.xss">
+      <DependentUpon>dsAsigMoldes_Maquinas_Agregar.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsignarComponentesMaquinas.xsc">
+      <DependentUpon>dsAsignarComponentesMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsignarComponentesMaquinas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsignarComponentesMaquinas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsAsignarComponentesMaquinas.xss">
+      <DependentUpon>dsAsignarComponentesMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCodigosProducidos.xsc">
+      <DependentUpon>dsCodigosProducidos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCodigosProducidos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCodigosProducidos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsCodigosProducidos.xss">
+      <DependentUpon>dsCodigosProducidos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoArticulos.xsc">
+      <DependentUpon>dsMantenimientoArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoArticulos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMantenimientoArticulos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoArticulos.xss">
+      <DependentUpon>dsMantenimientoArticulos.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoColores.xsc">
+      <DependentUpon>dsMantenimientoColores.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoColores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMantenimientoColores.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMantenimientoColores.xss">
+      <DependentUpon>dsMantenimientoColores.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMaquinas.xsc">
+      <DependentUpon>dsMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMaquinas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMaquinas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMaquinas.xss">
+      <DependentUpon>dsMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMoldes.xsc">
+      <DependentUpon>dsMoldes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMoldes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMoldes.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsMoldes.xss">
+      <DependentUpon>dsMoldes.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsCerrarAR.xsc">
+      <DependentUpon>dsCerrarAR.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsCerrarAR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCerrarAR.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsCerrarAR.xss">
+      <DependentUpon>dsCerrarAR.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsImpresionOrden.xsc">
+      <DependentUpon>dsImpresionOrden.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsImpresionOrden.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsImpresionOrden.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsImpresionOrden.xss">
+      <DependentUpon>dsImpresionOrden.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoAnalisisCP.xsc">
+      <DependentUpon>dsIngresoAnalisisCP.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoAnalisisCP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIngresoAnalisisCP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoAnalisisCP.xss">
+      <DependentUpon>dsIngresoAnalisisCP.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoOrden.xsc">
+      <DependentUpon>dsIngresoOrden.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoOrden.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIngresoOrden.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsIngresoOrden.xss">
+      <DependentUpon>dsIngresoOrden.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque.xsc">
+      <DependentUpon>dsParametros_Empaque.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Empaque.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Empaque.xss">
+      <DependentUpon>dsParametros_Empaque.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Ensambles.xsc">
+      <DependentUpon>dsParametros_Ensambles.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Ensambles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Ensambles.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Ensambles.xss">
+      <DependentUpon>dsParametros_Ensambles.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Produccion.xsc">
+      <DependentUpon>dsParametros_Produccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Produccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsParametros_Produccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Mantenimiento\DataSet\dsParametros_Produccion.xss">
+      <DependentUpon>dsParametros_Produccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion.xsc">
+      <DependentUpon>dsControlProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsControlProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion.xss">
+      <DependentUpon>dsControlProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccionDetalle.xsc">
+      <DependentUpon>dsControlProduccionDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccionDetalle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsControlProduccionDetalle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccionDetalle.xss">
+      <DependentUpon>dsControlProduccionDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Resumen.xsc">
+      <DependentUpon>dsControlProduccion_Resumen.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Resumen.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsControlProduccion_Resumen.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsControlProduccion_Resumen.xss">
+      <DependentUpon>dsControlProduccion_Resumen.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEmergenciasProduccion.xsc">
+      <DependentUpon>dsEmergenciasProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEmergenciasProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmergenciasProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEmergenciasProduccion.xss">
+      <DependentUpon>dsEmergenciasProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEtiquetasSolicitud.xsc">
+      <DependentUpon>dsEtiquetasSolicitud.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEtiquetasSolicitud.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEtiquetasSolicitud.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsEtiquetasSolicitud.xss">
+      <DependentUpon>dsEtiquetasSolicitud.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenesProduccion.xsc">
+      <DependentUpon>dsOrdenesProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenesProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrdenesProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenesProduccion.xss">
+      <DependentUpon>dsOrdenesProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenProduccionImpresion.xsc">
+      <DependentUpon>dsOrdenProduccionImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenProduccionImpresion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrdenProduccionImpresion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsOrdenProduccionImpresion.xss">
+      <DependentUpon>dsOrdenProduccionImpresion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsPorcEficienciaMaquinas.xsc">
+      <DependentUpon>dsPorcEficienciaMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsPorcEficienciaMaquinas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPorcEficienciaMaquinas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsPorcEficienciaMaquinas.xss">
+      <DependentUpon>dsPorcEficienciaMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsTrasladosMercaderia.xsc">
+      <DependentUpon>dsTrasladosMercaderia.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsTrasladosMercaderia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTrasladosMercaderia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Inventarios\DataSet\dsTrasladosMercaderia.xss">
+      <DependentUpon>dsTrasladosMercaderia.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsProgramacionProduccion.xsc">
+      <DependentUpon>dsProgramacionProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsProgramacionProduccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProgramacionProduccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsProgramacionProduccion.xss">
+      <DependentUpon>dsProgramacionProduccion.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsReciboProduccionEnsamble.xsc">
+      <DependentUpon>dsReciboProduccionEnsamble.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsReciboProduccionEnsamble.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReciboProduccionEnsamble.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsReciboProduccionEnsamble.xss">
+      <DependentUpon>dsReciboProduccionEnsamble.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsTrabajoEnMaquinas.xsc">
+      <DependentUpon>dsTrabajoEnMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsTrabajoEnMaquinas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTrabajoEnMaquinas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Produccion\DataSet\dsTrabajoEnMaquinas.xss">
+      <DependentUpon>dsTrabajoEnMaquinas.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsAnalisisVenta.xsc">
+      <DependentUpon>dsAnalisisVenta.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsAnalisisVenta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAnalisisVenta.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsAnalisisVenta.xss">
+      <DependentUpon>dsAnalisisVenta.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ArticulosOcupados.xsc">
+      <DependentUpon>dsTemporal_ArticulosOcupados.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ArticulosOcupados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ArticulosOcupados.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ArticulosOcupados.xss">
+      <DependentUpon>dsTemporal_ArticulosOcupados.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ColorDetalle.xsc">
+      <DependentUpon>dsTemporal_ColorDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ColorDetalle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ColorDetalle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ColorDetalle.xss">
+      <DependentUpon>dsTemporal_ColorDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaCampana.xsc">
+      <DependentUpon>dsTemporal_DeudaCampana.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaCampana.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_DeudaCampana.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaCampana.xss">
+      <DependentUpon>dsTemporal_DeudaCampana.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaEnsamble.xsc">
+      <DependentUpon>dsTemporal_DeudaEnsamble.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaEnsamble.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_DeudaEnsamble.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaEnsamble.xss">
+      <DependentUpon>dsTemporal_DeudaEnsamble.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaProyeccion.xsc">
+      <DependentUpon>dsTemporal_DeudaProyeccion.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaProyeccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_DeudaProyeccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaProyeccion.xss">
+      <DependentUpon>dsTemporal_DeudaProyeccion.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaRol.xsc">
+      <DependentUpon>dsTemporal_DeudaRol.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaRol.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_DeudaRol.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_DeudaRol.xss">
+      <DependentUpon>dsTemporal_DeudaRol.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Ensamble.xsc">
+      <DependentUpon>dsTemporal_Ensamble.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Ensamble.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_Ensamble.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Ensamble.xss">
+      <DependentUpon>dsTemporal_Ensamble.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ListaMateriales.xsc">
+      <DependentUpon>dsTemporal_ListaMateriales.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ListaMateriales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ListaMateriales.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ListaMateriales.xss">
+      <DependentUpon>dsTemporal_ListaMateriales.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MaquinasParaTrabajar.xsc">
+      <DependentUpon>dsTemporal_MaquinasParaTrabajar.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MaquinasParaTrabajar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_MaquinasParaTrabajar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MaquinasParaTrabajar.xss">
+      <DependentUpon>dsTemporal_MaquinasParaTrabajar.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MoldesDeCodigo.xsc">
+      <DependentUpon>dsTemporal_MoldesDeCodigo.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MoldesDeCodigo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_MoldesDeCodigo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_MoldesDeCodigo.xss">
+      <DependentUpon>dsTemporal_MoldesDeCodigo.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesCerradas.xsc">
+      <DependentUpon>dsTemporal_OrdenesCerradas.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesCerradas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_OrdenesCerradas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesCerradas.xss">
+      <DependentUpon>dsTemporal_OrdenesCerradas.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesProduccionEnsambleDetalle.xsc">
+      <DependentUpon>dsTemporal_OrdenesProduccionEnsambleDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesProduccionEnsambleDetalle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_OrdenesProduccionEnsambleDetalle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_OrdenesProduccionEnsambleDetalle.xss">
+      <DependentUpon>dsTemporal_OrdenesProduccionEnsambleDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ParametrosDefault.xsc">
+      <DependentUpon>dsTemporal_ParametrosDefault.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ParametrosDefault.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ParametrosDefault.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ParametrosDefault.xss">
+      <DependentUpon>dsTemporal_ParametrosDefault.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Prioridades.xsc">
+      <DependentUpon>dsTemporal_Prioridades.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Prioridades.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_Prioridades.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Prioridades.xss">
+      <DependentUpon>dsTemporal_Prioridades.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Produccion.xsc">
+      <DependentUpon>dsTemporal_Produccion.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Produccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_Produccion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Produccion.xss">
+      <DependentUpon>dsTemporal_Produccion.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProduccionColores_Padre.xsc">
+      <DependentUpon>dsTemporal_ProduccionColores_Padre.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProduccionColores_Padre.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ProduccionColores_Padre.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProduccionColores_Padre.xss">
+      <DependentUpon>dsTemporal_ProduccionColores_Padre.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProgramacionGrafica.xsc">
+      <DependentUpon>dsTemporal_ProgramacionGrafica.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProgramacionGrafica.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_ProgramacionGrafica.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_ProgramacionGrafica.xss">
+      <DependentUpon>dsTemporal_ProgramacionGrafica.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Recibos.xsc">
+      <DependentUpon>dsTemporal_Recibos.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Recibos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_Recibos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Recibos.xss">
+      <DependentUpon>dsTemporal_Recibos.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Stock.xsc">
+      <DependentUpon>dsTemporal_Stock.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Stock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_Stock.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_Stock.xss">
+      <DependentUpon>dsTemporal_Stock.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_TandasTrabajo.xsc">
+      <DependentUpon>dsTemporal_TandasTrabajo.xsd</DependentUpon>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_TandasTrabajo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTemporal_TandasTrabajo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TMP\DataSet\dsTemporal_TandasTrabajo.xss">
+      <DependentUpon>dsTemporal_TandasTrabajo.xsd</DependentUpon>
+    </None>
+    <None Include="waProduccion_Pedidos.vbproj.bak" />
+    <None Include="waProduccion_Pedidos_1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Produccion - Almacen\DataSet\dsPedidoIngreso.xsc">
+      <DependentUpon>dsPedidoIngreso.xsd</DependentUpon>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsPedidoIngreso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPedidoIngreso.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produccion - Almacen\DataSet\dsPedidoIngreso.xss">
+      <DependentUpon>dsPedidoIngreso.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\exportacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxes-brown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Produccion - Almacen\Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAP 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Produccion.ico" />
+    <Content Include="Produccion_Icono.ico" />
+    <None Include="Resources\arrow-left-black.png" />
+    <None Include="Resources\arrow-right-black.png" />
+    <None Include="Resources\Fondoplast.jpg" />
+    <None Include="Resources\Guateplast_Splash3.png" />
+    <None Include="Resources\Guateplast_Splash2.png" />
+    <None Include="Resources\Guateplast_Splash1.png" />
+    <None Include="Resources\Guateplast_Splash.png" />
+    <None Include="Resources\Produccion_Splash2.png" />
+    <None Include="Resources\Produccion_Splash.png" />
+    <None Include="Resources\devexpress.png" />
+    <None Include="Resources\Logo-guateplast-Original.gif" />
+    <None Include="Resources\save_16x16.png" />
+    <None Include="Resources\save_32x32.png" />
+    <None Include="Resources\formatnumbercurrency_16x16.png" />
+    <None Include="Resources\gaugestylehalfcircular_32x32.png" />
+    <None Include="Resources\gaugestylefullcircular_16x16.png" />
+    <None Include="Resources\edittask_16x16.png" />
+    <None Include="Resources\bosale_16x16.png" />
+    <None Include="Resources\barcode_32x32.png" />
+    <None Include="Resources\barcode_16x16.png" />
+    <None Include="Resources\stackedlinewithmarkers_32x32.png" />
+    <None Include="Resources\stackedlinewithmarkers_16x16.png" />
+    <None Include="Resources\refreshallpivottable_32x32.png" />
+    <None Include="Resources\refreshallpivottable_16x16.png" />
+    <None Include="Resources\copy_32x321.png" />
+    <None Include="Resources\copy_16x16.png" />
+    <None Include="Resources\new_32x32.png" />
+    <None Include="Resources\index_32x32.png" />
+    <None Include="Resources\clusteredcylinder_16x16.png" />
+    <None Include="Resources\clusteredcylinder_32x32.png" />
+    <None Include="Resources\wraptext2_16x16.png" />
+    <None Include="Resources\wraptext2_32x32.png" />
+    <None Include="Resources\boproductgroup_16x16.png" />
+    <None Include="Resources\boproductgroup_32x32.png" />
+    <None Include="Resources\boorderitem_16x16.png" />
+    <None Include="Resources\boorderitem_32x32.png" />
+    <None Include="Resources\copy_32x32.png" />
+    <None Include="Resources\printtitles_32x32.png" />
+    <None Include="Resources\pageorientationlandscape_32x32.png" />
+    <None Include="Resources\editname_32x32.png" />
+    <None Include="Resources\deletetablerows_32x321.png" />
+    <None Include="Resources\exporttoxls_32x32.png" />
+    <None Include="Resources\deletetablerows_32x32.png" />
+    <None Include="Resources\legendnone2_32x321.png" />
+    <None Include="Resources\legendnone2_16x16.png" />
+    <None Include="Resources\legendnone2_32x32.png" />
+    <None Include="Resources\inlinesizelegend_16x16.png" />
+    <None Include="Resources\inlinesizelegend_32x32.png" />
+    <None Include="Resources\wordwrap_16x16.png" />
+    <None Include="Resources\wordwrap_32x321.png" />
+    <None Include="Resources\wordwrap_32x32.png" />
+    <None Include="Resources\barofpie_32x321.png" />
+    <None Include="Resources\barofpie_32x32.png" />
+    <None Include="Resources\outbox_32x32.png" />
+    <None Include="Resources\inbox_16x16.png" />
+    <None Include="Resources\inbox_32x32.png" />
+    <None Include="Resources\CodeBars.png" />
+    <None Include="Resources\Ingenieria.png" />
+    <None Include="Resources\World1.png" />
+    <None Include="Resources\World.png" />
+    <None Include="Resources\Items.png" />
+    <None Include="Resources\Materiales.png" />
+    <None Include="Resources\Maquinas.png" />
+    <None Include="Resources\CodigosProducidos.png" />
+    <None Include="Resources\Bodegas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30100}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPbouiCOM">
+      <Guid>{6048236A-956D-498D-A6F1-9C81C13AB6E8}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

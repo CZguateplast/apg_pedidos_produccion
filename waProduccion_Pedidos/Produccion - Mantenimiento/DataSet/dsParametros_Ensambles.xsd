@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsParametros_Ensambles" targetNamespace="http://tempuri.org/dsParametros_Ensambles.xsd" xmlns:mstns="http://tempuri.org/dsParametros_Ensambles.xsd" xmlns="http://tempuri.org/dsParametros_Ensambles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsParametros_Ensambles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsParametros_Ensambles" msprop:Generator_UserDSName="dsParametros_Ensambles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtParametrosEnsamble" msprop:Generator_TableClassName="dsdtParametrosEnsambleDataTable" msprop:Generator_TableVarName="tabledsdtParametrosEnsamble" msprop:Generator_TablePropName="dsdtParametrosEnsamble" msprop:Generator_RowDeletingName="dsdtParametrosEnsambleRowDeleting" msprop:Generator_RowChangingName="dsdtParametrosEnsambleRowChanging" msprop:Generator_RowEvHandlerName="dsdtParametrosEnsambleRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtParametrosEnsambleRowDeleted" msprop:Generator_UserTableName="dsdtParametrosEnsamble" msprop:Generator_RowChangedName="dsdtParametrosEnsambleRowChanged" msprop:Generator_RowEvArgName="dsdtParametrosEnsambleRowChangeEvent" msprop:Generator_RowClassName="dsdtParametrosEnsambleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SegundosXArticulo" msprop:Generator_ColumnVarNameInTable="columnSegundosXArticulo" msprop:Generator_ColumnPropNameInRow="SegundosXArticulo" msprop:Generator_ColumnPropNameInTable="SegundosXArticuloColumn" msprop:Generator_UserColumnName="SegundosXArticulo" type="xs:int" minOccurs="0" />
+              <xs:element name="MinutosXArticulo" msprop:Generator_ColumnVarNameInTable="columnMinutosXArticulo" msprop:Generator_ColumnPropNameInRow="MinutosXArticulo" msprop:Generator_ColumnPropNameInTable="MinutosXArticuloColumn" msprop:Generator_UserColumnName="MinutosXArticulo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EnsamblesXHora" msprop:Generator_ColumnVarNameInTable="columnEnsamblesXHora" msprop:Generator_ColumnPropNameInRow="EnsamblesXHora" msprop:Generator_ColumnPropNameInTable="EnsamblesXHoraColumn" msprop:Generator_UserColumnName="EnsamblesXHora" type="xs:int" minOccurs="0" />
+              <xs:element name="EquipoPersonas" msprop:Generator_ColumnVarNameInTable="columnEquipoPersonas" msprop:Generator_ColumnPropNameInRow="EquipoPersonas" msprop:Generator_ColumnPropNameInTable="EquipoPersonasColumn" msprop:Generator_UserColumnName="EquipoPersonas" type="xs:int" minOccurs="0" />
+              <xs:element name="Bit_CreacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_CreacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_CreacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_CreacionUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_CreacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_CreacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_CreacionFechaColumn" msprop:Generator_UserColumnName="Bit_CreacionFecha" type="xs:dateTime" />
+              <xs:element name="Bit_ModificacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_ModificacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_ModificacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionFechaColumn" msprop:Generator_UserColumnName="Bit_ModificacionFecha" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtParametrosEnsambleSeleccionada" msprop:Generator_TableClassName="dsdtParametrosEnsambleSeleccionadaDataTable" msprop:Generator_TableVarName="tabledsdtParametrosEnsambleSeleccionada" msprop:Generator_RowChangedName="dsdtParametrosEnsambleSeleccionadaRowChanged" msprop:Generator_TablePropName="dsdtParametrosEnsambleSeleccionada" msprop:Generator_RowDeletingName="dsdtParametrosEnsambleSeleccionadaRowDeleting" msprop:Generator_RowChangingName="dsdtParametrosEnsambleSeleccionadaRowChanging" msprop:Generator_RowEvHandlerName="dsdtParametrosEnsambleSeleccionadaRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtParametrosEnsambleSeleccionadaRowDeleted" msprop:Generator_RowClassName="dsdtParametrosEnsambleSeleccionadaRow" msprop:Generator_UserTableName="dsdtParametrosEnsambleSeleccionada" msprop:Generator_RowEvArgName="dsdtParametrosEnsambleSeleccionadaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SegundosXArticulo" msprop:Generator_ColumnVarNameInTable="columnSegundosXArticulo" msprop:Generator_ColumnPropNameInRow="SegundosXArticulo" msprop:Generator_ColumnPropNameInTable="SegundosXArticuloColumn" msprop:Generator_UserColumnName="SegundosXArticulo" type="xs:int" minOccurs="0" />
+              <xs:element name="MinutosXArticulo" msprop:Generator_ColumnVarNameInTable="columnMinutosXArticulo" msprop:Generator_ColumnPropNameInRow="MinutosXArticulo" msprop:Generator_ColumnPropNameInTable="MinutosXArticuloColumn" msprop:Generator_UserColumnName="MinutosXArticulo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EnsamblesXHora" msprop:Generator_ColumnVarNameInTable="columnEnsamblesXHora" msprop:Generator_ColumnPropNameInRow="EnsamblesXHora" msprop:Generator_ColumnPropNameInTable="EnsamblesXHoraColumn" msprop:Generator_UserColumnName="EnsamblesXHora" type="xs:int" minOccurs="0" />
+              <xs:element name="EquipoPersonas" msprop:Generator_ColumnVarNameInTable="columnEquipoPersonas" msprop:Generator_ColumnPropNameInRow="EquipoPersonas" msprop:Generator_ColumnPropNameInTable="EquipoPersonasColumn" msprop:Generator_UserColumnName="EquipoPersonas" type="xs:int" minOccurs="0" />
+              <xs:element name="Bit_CreacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_CreacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_CreacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_CreacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_CreacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_CreacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_CreacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_CreacionFechaColumn" msprop:Generator_UserColumnName="Bit_CreacionFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bit_ModificacionUsuario" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionUsuario" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionUsuario" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionUsuarioColumn" msprop:Generator_UserColumnName="Bit_ModificacionUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bit_ModificacionFecha" msprop:Generator_ColumnVarNameInTable="columnBit_ModificacionFecha" msprop:Generator_ColumnPropNameInRow="Bit_ModificacionFecha" msprop:Generator_ColumnPropNameInTable="Bit_ModificacionFechaColumn" msprop:Generator_UserColumnName="Bit_ModificacionFecha" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

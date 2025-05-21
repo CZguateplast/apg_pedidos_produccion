@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsParametros_Empaque" targetNamespace="http://tempuri.org/dsParametros_Empaque.xsd" xmlns:mstns="http://tempuri.org/dsParametros_Empaque.xsd" xmlns="http://tempuri.org/dsParametros_Empaque.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsParametros_Empaque" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsParametros_Empaque" msprop:Generator_UserDSName="dsParametros_Empaque">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtEmpaqueOpciones" msprop:Generator_TableClassName="dsdtEmpaqueOpcionesDataTable" msprop:Generator_TableVarName="tabledsdtEmpaqueOpciones" msprop:Generator_TablePropName="dsdtEmpaqueOpciones" msprop:Generator_RowDeletingName="dsdtEmpaqueOpcionesRowDeleting" msprop:Generator_RowChangingName="dsdtEmpaqueOpcionesRowChanging" msprop:Generator_RowEvHandlerName="dsdtEmpaqueOpcionesRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtEmpaqueOpcionesRowDeleted" msprop:Generator_UserTableName="dsdtEmpaqueOpciones" msprop:Generator_RowChangedName="dsdtEmpaqueOpcionesRowChanged" msprop:Generator_RowEvArgName="dsdtEmpaqueOpcionesRowChangeEvent" msprop:Generator_RowClassName="dsdtEmpaqueOpcionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OpcionEmpaque" msprop:Generator_ColumnVarNameInTable="columnOpcionEmpaque" msprop:Generator_ColumnPropNameInRow="OpcionEmpaque" msprop:Generator_ColumnPropNameInTable="OpcionEmpaqueColumn" msprop:Generator_UserColumnName="OpcionEmpaque" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtEmpaque" msprop:Generator_TableClassName="dsdtEmpaqueDataTable" msprop:Generator_TableVarName="tabledsdtEmpaque" msprop:Generator_TablePropName="dsdtEmpaque" msprop:Generator_RowDeletingName="dsdtEmpaqueRowDeleting" msprop:Generator_RowChangingName="dsdtEmpaqueRowChanging" msprop:Generator_RowEvHandlerName="dsdtEmpaqueRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtEmpaqueRowDeleted" msprop:Generator_UserTableName="dsdtEmpaque" msprop:Generator_RowChangedName="dsdtEmpaqueRowChanged" msprop:Generator_RowEvArgName="dsdtEmpaqueRowChangeEvent" msprop:Generator_RowClassName="dsdtEmpaqueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OpcionEmpaque" msprop:Generator_ColumnVarNameInTable="columnOpcionEmpaque" msprop:Generator_ColumnPropNameInRow="OpcionEmpaque" msprop:Generator_ColumnPropNameInTable="OpcionEmpaqueColumn" msprop:Generator_UserColumnName="OpcionEmpaque" type="xs:int" />
+              <xs:element name="Tipo" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoComprado" msprop:Generator_ColumnVarNameInTable="columnCodigoComprado" msprop:Generator_ColumnPropNameInRow="CodigoComprado" msprop:Generator_ColumnPropNameInTable="CodigoCompradoColumn" msprop:Generator_UserColumnName="CodigoComprado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unidades" msprop:Generator_ColumnVarNameInTable="columnUnidades" msprop:Generator_ColumnPropNameInRow="Unidades" msprop:Generator_ColumnPropNameInTable="UnidadesColumn" msprop:Generator_UserColumnName="Unidades" type="xs:int" minOccurs="0" />
+              <xs:element name="Unidadmedida" msprop:Generator_ColumnVarNameInTable="columnUnidadmedida" msprop:Generator_ColumnPropNameInRow="Unidadmedida" msprop:Generator_ColumnPropNameInTable="UnidadmedidaColumn" msprop:Generator_UserColumnName="Unidadmedida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Observacion" msprop:Generator_ColumnVarNameInTable="columnObservacion" msprop:Generator_ColumnPropNameInRow="Observacion" msprop:Generator_ColumnPropNameInTable="ObservacionColumn" msprop:Generator_UserColumnName="Observacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dsdtEmpaqueOpciones_dsdtEmpaque" msdata:parent="dsdtEmpaqueOpciones" msdata:child="dsdtEmpaque" msdata:parentkey="OpcionEmpaque" msdata:childkey="OpcionEmpaque" msprop:Generator_UserChildTable="dsdtEmpaque" msprop:Generator_ChildPropName="GetdsdtEmpaqueRows" msprop:Generator_UserRelationName="dsdtEmpaqueOpciones_dsdtEmpaque" msprop:Generator_ParentPropName="dsdtEmpaqueOpcionesRow" msprop:Generator_RelationVarName="relationdsdtEmpaqueOpciones_dsdtEmpaque" msprop:Generator_UserParentTable="dsdtEmpaqueOpciones" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

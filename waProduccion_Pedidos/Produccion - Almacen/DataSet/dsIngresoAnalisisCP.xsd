@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsIngresoAnalisisCP" targetNamespace="http://tempuri.org/dsIngresoAnalisisCP.xsd" xmlns:mstns="http://tempuri.org/dsIngresoAnalisisCP.xsd" xmlns="http://tempuri.org/dsIngresoAnalisisCP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dsdtIngresoAnalisisCPTableAdapter" GeneratorDataComponentClassName="dsdtIngresoAnalisisCPTableAdapter" Name="dsdtIngresoAnalisisCP" UserDataComponentName="dsdtIngresoAnalisisCPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SBOGuateplastConnectionString (MySettings)" DbObjectName="SELECT CASE WHEN A.U_NoDeLinea = '1' THEN 'NO' ELSE 'SI' END [DeLinea], A.ItemCode [CodigoArticulo], CONVERT(INTEGER,A.OnHand) [StockTotal], (SELECT ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Almacen')[Almacen], (SELECT ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Metasa')[Metasa], (SELECT ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Pradera')[Pradera], (SELECT ISNULL(SUM( CASE WHEN PlannedQty &gt; CmpltQty THEN CONVERT(INTEGER,(PlannedQty - CmpltQty)) ELSE '0' END),0) [Diferencia] FROM SBOGuateplast.dbo.OWOR A2 WHERE A2.ItemCode = A.ItemCode AND A2.Status IN ('P','R') AND A2.U_Tipo IN ('0')) [Produccion], (SELECT ISNULL(SUM( CASE WHEN a2.PlannedQty &gt; A2.CmpltQty THEN CONVERT(INTEGER,(A2.PlannedQty - A2.CmpltQty)* B2.BaseQty) ELSE '0' END),0) [Diferencia] FROM SBOGuateplast.dbo.OWOR A2 LEFT JOIN SBOGuateplast.dbo.WOR1 B2 ON B2.DocEntry = A2.DocEntry WHERE B2.ItemCode = A.ItemCode AND A2.Status IN ('P','R') AND A2.U_Tipo IN ('0','1')) [Comprometido] FROM SBOGuateplast. dbo.OITM A WHERE A.ItemCode LIKE 'CP000121%' AND LEN(A.ItemCode) &gt; '8'" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+DeLinea,
+CodigoArticulo,
+StockTotal,
+Almacen,Metasa,
+Pradera,
+Produccion,
+Comprometido ,
+((StockTotal + Produccion)- comprometido) [Disponible]
+FROM (
+SELECT
+CASE WHEN A.U_NoDeLinea = '1' THEN 'NO' ELSE 'SI' END [DeLinea],
+A.ItemCode [CodigoArticulo],
+CONVERT(INTEGER,A.OnHand) [StockTotal],
+(Select ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Almacen')[Almacen],
+(Select ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Metasa')[Metasa],
+(Select ISNULL(CONVERT(INTEGER,OnHand),0) FROM SBOGuateplast.dbo.OITW WHERE ItemCode = A.ItemCode AND WhsCode = 'Pradera')[Pradera],
+(SELECT
+  ISNULL(SUM(
+  CASE
+  WHEN PlannedQty &gt; CmpltQty
+  THEN CONVERT(INTEGER,(PlannedQty - CmpltQty))
+  ELSE '0'
+  END),0) [Diferencia]
+  FROM SBOGuateplast.dbo.OWOR A2
+  WHERE A2.ItemCode = A.ItemCode AND A2.Status IN ('P','R') AND A2.U_Tipo IN ('0')) [Produccion],
+(SELECT
+  ISNULL(SUM(
+  CASE
+  WHEN a2.PlannedQty &gt; A2.CmpltQty
+  THEN CONVERT(INTEGER,(A2.PlannedQty - A2.CmpltQty)* B2.BaseQty)
+  ELSE '0'
+  END),0) [Diferencia]
+  FROM SBOGuateplast.dbo.OWOR A2
+  LEFT JOIN SBOGuateplast.dbo.WOR1 B2 ON B2.DocEntry = A2.DocEntry
+  WHERE B2.ItemCode = A.ItemCode AND A2.Status IN ('P','R') AND A2.U_Tipo IN ('0','1')) [Comprometido]
+FROM SBOGuateplast.	dbo.OITM A
+WHERE A.ItemCode LIKE 'CP000121%'
+AND LEN(A.ItemCode) &gt; '8') B</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DeLinea" DataSetColumn="DeLinea" />
+              <Mapping SourceColumn="CodigoArticulo" DataSetColumn="CodigoArticulo" />
+              <Mapping SourceColumn="StockTotal" DataSetColumn="StockTotal" />
+              <Mapping SourceColumn="Almacen" DataSetColumn="Almacen" />
+              <Mapping SourceColumn="Metasa" DataSetColumn="Metasa" />
+              <Mapping SourceColumn="Pradera" DataSetColumn="Pradera" />
+              <Mapping SourceColumn="Produccion" DataSetColumn="Produccion" />
+              <Mapping SourceColumn="Comprometido" DataSetColumn="Comprometido" />
+              <Mapping SourceColumn="Disponible" DataSetColumn="Disponible" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsIngresoAnalisisCP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsIngresoAnalisisCP" msprop:Generator_UserDSName="dsIngresoAnalisisCP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtIngresoAnalisisCP" msprop:Generator_TableClassName="dsdtIngresoAnalisisCPDataTable" msprop:Generator_TableVarName="tabledsdtIngresoAnalisisCP" msprop:Generator_RowChangedName="dsdtIngresoAnalisisCPRowChanged" msprop:Generator_TablePropName="dsdtIngresoAnalisisCP" msprop:Generator_RowDeletingName="dsdtIngresoAnalisisCPRowDeleting" msprop:Generator_RowChangingName="dsdtIngresoAnalisisCPRowChanging" msprop:Generator_RowEvHandlerName="dsdtIngresoAnalisisCPRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtIngresoAnalisisCPRowDeleted" msprop:Generator_RowClassName="dsdtIngresoAnalisisCPRow" msprop:Generator_UserTableName="dsdtIngresoAnalisisCP" msprop:Generator_RowEvArgName="dsdtIngresoAnalisisCPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeLinea" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDeLinea" msprop:Generator_ColumnPropNameInRow="DeLinea" msprop:Generator_ColumnPropNameInTable="DeLineaColumn" msprop:Generator_UserColumnName="DeLinea" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" type="xs:string" minOccurs="0" />
+              <xs:element name="StockTotal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStockTotal" msprop:Generator_ColumnPropNameInRow="StockTotal" msprop:Generator_ColumnPropNameInTable="StockTotalColumn" msprop:Generator_UserColumnName="StockTotal" type="xs:int" minOccurs="0" />
+              <xs:element name="Almacen" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAlmacen" msprop:Generator_ColumnPropNameInRow="Almacen" msprop:Generator_ColumnPropNameInTable="AlmacenColumn" msprop:Generator_UserColumnName="Almacen" type="xs:int" minOccurs="0" />
+              <xs:element name="Metasa" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMetasa" msprop:Generator_ColumnPropNameInRow="Metasa" msprop:Generator_ColumnPropNameInTable="MetasaColumn" msprop:Generator_UserColumnName="Metasa" type="xs:int" minOccurs="0" />
+              <xs:element name="Pradera" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPradera" msprop:Generator_ColumnPropNameInRow="Pradera" msprop:Generator_ColumnPropNameInTable="PraderaColumn" msprop:Generator_UserColumnName="Pradera" type="xs:int" minOccurs="0" />
+              <xs:element name="Produccion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProduccion" msprop:Generator_ColumnPropNameInRow="Produccion" msprop:Generator_ColumnPropNameInTable="ProduccionColumn" msprop:Generator_UserColumnName="Produccion" type="xs:int" minOccurs="0" />
+              <xs:element name="Comprometido" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnComprometido" msprop:Generator_ColumnPropNameInRow="Comprometido" msprop:Generator_ColumnPropNameInTable="ComprometidoColumn" msprop:Generator_UserColumnName="Comprometido" type="xs:int" minOccurs="0" />
+              <xs:element name="Disponible" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisponible" msprop:Generator_ColumnPropNameInRow="Disponible" msprop:Generator_ColumnPropNameInTable="DisponibleColumn" msprop:Generator_UserColumnName="Disponible" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtIngresoOrdenes" msprop:Generator_TableClassName="dsdtIngresoOrdenesDataTable" msprop:Generator_TableVarName="tabledsdtIngresoOrdenes" msprop:Generator_RowChangedName="dsdtIngresoOrdenesRowChanged" msprop:Generator_TablePropName="dsdtIngresoOrdenes" msprop:Generator_RowDeletingName="dsdtIngresoOrdenesRowDeleting" msprop:Generator_RowChangingName="dsdtIngresoOrdenesRowChanging" msprop:Generator_RowEvHandlerName="dsdtIngresoOrdenesRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtIngresoOrdenesRowDeleted" msprop:Generator_RowClassName="dsdtIngresoOrdenesRow" msprop:Generator_UserTableName="dsdtIngresoOrdenes" msprop:Generator_RowEvArgName="dsdtIngresoOrdenesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Origen" msprop:Generator_ColumnVarNameInTable="columnOrigen" msprop:Generator_ColumnPropNameInRow="Origen" msprop:Generator_ColumnPropNameInTable="OrigenColumn" msprop:Generator_UserColumnName="Origen" type="xs:string" minOccurs="0" />
+              <xs:element name="Destino" msprop:Generator_ColumnVarNameInTable="columnDestino" msprop:Generator_ColumnPropNameInRow="Destino" msprop:Generator_ColumnPropNameInTable="DestinoColumn" msprop:Generator_UserColumnName="Destino" type="xs:string" minOccurs="0" />
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" type="xs:string" minOccurs="0" />
+              <xs:element name="GrupoCliente" msprop:Generator_ColumnVarNameInTable="columnGrupoCliente" msprop:Generator_ColumnPropNameInRow="GrupoCliente" msprop:Generator_ColumnPropNameInTable="GrupoClienteColumn" msprop:Generator_UserColumnName="GrupoCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCliente" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCliente" msprop:Generator_ColumnVarNameInTable="columnNombreCliente" msprop:Generator_ColumnPropNameInRow="NombreCliente" msprop:Generator_ColumnPropNameInTable="NombreClienteColumn" msprop:Generator_UserColumnName="NombreCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="NumOrden" msprop:Generator_ColumnVarNameInTable="columnNumOrden" msprop:Generator_ColumnPropNameInRow="NumOrden" msprop:Generator_ColumnPropNameInTable="NumOrdenColumn" msprop:Generator_UserColumnName="NumOrden" type="xs:int" minOccurs="0" />
+              <xs:element name="NumCampana" msprop:Generator_ColumnVarNameInTable="columnNumCampana" msprop:Generator_ColumnPropNameInRow="NumCampana" msprop:Generator_ColumnPropNameInTable="NumCampanaColumn" msprop:Generator_UserColumnName="NumCampana" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreCampana" msprop:Generator_ColumnVarNameInTable="columnNombreCampana" msprop:Generator_ColumnPropNameInRow="NombreCampana" msprop:Generator_ColumnPropNameInTable="NombreCampanaColumn" msprop:Generator_UserColumnName="NombreCampana" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaEntrega" msprop:Generator_ColumnVarNameInTable="columnFechaEntrega" msprop:Generator_ColumnPropNameInRow="FechaEntrega" msprop:Generator_ColumnPropNameInTable="FechaEntregaColumn" msprop:Generator_UserColumnName="FechaEntrega" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtIngresoAnalisisCP" />
+      <xs:field xpath="mstns:CodigoArticulo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

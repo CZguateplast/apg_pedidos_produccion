@@ -1,0 +1,3 @@
+﻿Public Class xrptParametros_AdvertenciasTrabajo
+
+End Class

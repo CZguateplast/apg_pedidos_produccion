@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsParametros_Fotografias" targetNamespace="http://tempuri.org/dsParametros_Fotografias.xsd" xmlns:mstns="http://tempuri.org/dsParametros_Fotografias.xsd" xmlns="http://tempuri.org/dsParametros_Fotografias.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsParametros_Fotografias" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsParametros_Fotografias" msprop:Generator_UserDSName="dsParametros_Fotografias">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtImpresion_FotoInstruccionesTrabajo" msprop:Generator_TableClassName="dsdtImpresion_FotoInstruccionesTrabajoDataTable" msprop:Generator_TableVarName="tabledsdtImpresion_FotoInstruccionesTrabajo" msprop:Generator_TablePropName="dsdtImpresion_FotoInstruccionesTrabajo" msprop:Generator_RowDeletingName="dsdtImpresion_FotoInstruccionesTrabajoRowDeleting" msprop:Generator_RowChangingName="dsdtImpresion_FotoInstruccionesTrabajoRowChanging" msprop:Generator_RowEvHandlerName="dsdtImpresion_FotoInstruccionesTrabajoRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtImpresion_FotoInstruccionesTrabajoRowDeleted" msprop:Generator_UserTableName="dsdtImpresion_FotoInstruccionesTrabajo" msprop:Generator_RowChangedName="dsdtImpresion_FotoInstruccionesTrabajoRowChanged" msprop:Generator_RowEvArgName="dsdtImpresion_FotoInstruccionesTrabajoRowChangeEvent" msprop:Generator_RowClassName="dsdtImpresion_FotoInstruccionesTrabajoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

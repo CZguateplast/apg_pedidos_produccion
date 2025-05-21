@@ -1,0 +1,3 @@
+﻿Public Class xrptOrdenProduccionImpresionListaMat
+
+End Class

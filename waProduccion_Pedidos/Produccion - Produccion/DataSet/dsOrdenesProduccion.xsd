@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsOrdenesProduccion" targetNamespace="http://tempuri.org/dsOrdenesProduccion.xsd" xmlns:mstns="http://tempuri.org/dsOrdenesProduccion.xsd" xmlns="http://tempuri.org/dsOrdenesProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsOrdenesProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsOrdenesProduccion" msprop:Generator_UserDSName="dsOrdenesProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtOrdenProduccion" msprop:Generator_TableClassName="dsdtOrdenProduccionDataTable" msprop:Generator_TableVarName="tabledsdtOrdenProduccion" msprop:Generator_TablePropName="dsdtOrdenProduccion" msprop:Generator_RowDeletingName="dsdtOrdenProduccionRowDeleting" msprop:Generator_RowChangingName="dsdtOrdenProduccionRowChanging" msprop:Generator_RowEvHandlerName="dsdtOrdenProduccionRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtOrdenProduccionRowDeleted" msprop:Generator_UserTableName="dsdtOrdenProduccion" msprop:Generator_RowChangedName="dsdtOrdenProduccionRowChanged" msprop:Generator_RowEvArgName="dsdtOrdenProduccionRowChangeEvent" msprop:Generator_RowClassName="dsdtOrdenProduccionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumLinea" msprop:Generator_ColumnVarNameInTable="columnNumLinea" msprop:Generator_ColumnPropNameInRow="NumLinea" msprop:Generator_ColumnPropNameInTable="NumLineaColumn" msprop:Generator_UserColumnName="NumLinea" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CantidadBase" msprop:Generator_ColumnVarNameInTable="columnCantidadBase" msprop:Generator_ColumnPropNameInRow="CantidadBase" msprop:Generator_ColumnPropNameInTable="CantidadBaseColumn" msprop:Generator_UserColumnName="CantidadBase" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Requerido" msprop:Generator_ColumnVarNameInTable="columnRequerido" msprop:Generator_ColumnPropNameInRow="Requerido" msprop:Generator_ColumnPropNameInTable="RequeridoColumn" msprop:Generator_UserColumnName="Requerido" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Solicitado" msprop:Generator_ColumnVarNameInTable="columnSolicitado" msprop:Generator_ColumnPropNameInRow="Solicitado" msprop:Generator_ColumnPropNameInTable="SolicitadoColumn" msprop:Generator_UserColumnName="Solicitado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Almacen" msprop:Generator_ColumnVarNameInTable="columnAlmacen" msprop:Generator_ColumnPropNameInRow="Almacen" msprop:Generator_ColumnPropNameInTable="AlmacenColumn" msprop:Generator_UserColumnName="Almacen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

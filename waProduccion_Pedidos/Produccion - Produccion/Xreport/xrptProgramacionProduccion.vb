@@ -1,0 +1,3 @@
+﻿Public Class xrptProgramacionProduccion
+
+End Class

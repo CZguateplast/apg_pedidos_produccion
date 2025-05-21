@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCerrarAR" targetNamespace="http://tempuri.org/dsCerrarAR.xsd" xmlns:mstns="http://tempuri.org/dsCerrarAR.xsd" xmlns="http://tempuri.org/dsCerrarAR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCerrarAR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCerrarAR" msprop:Generator_UserDSName="dsCerrarAR">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtCerrarAR" msprop:Generator_TableClassName="dsdtCerrarARDataTable" msprop:Generator_TableVarName="tabledsdtCerrarAR" msprop:Generator_RowChangedName="dsdtCerrarARRowChanged" msprop:Generator_TablePropName="dsdtCerrarAR" msprop:Generator_RowDeletingName="dsdtCerrarARRowDeleting" msprop:Generator_RowChangingName="dsdtCerrarARRowChanging" msprop:Generator_RowEvHandlerName="dsdtCerrarARRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtCerrarARRowDeleted" msprop:Generator_RowClassName="dsdtCerrarARRow" msprop:Generator_UserTableName="dsdtCerrarAR" msprop:Generator_RowEvArgName="dsdtCerrarARRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumSAP" msprop:Generator_ColumnVarNameInTable="columnNumSAP" msprop:Generator_ColumnPropNameInRow="NumSAP" msprop:Generator_ColumnPropNameInTable="NumSAPColumn" msprop:Generator_UserColumnName="NumSAP" type="xs:int" />
+              <xs:element name="Estado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTipo" msprop:Generator_ColumnPropNameInRow="Tipo" msprop:Generator_ColumnPropNameInTable="TipoColumn" msprop:Generator_UserColumnName="Tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Origen" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOrigen" msprop:Generator_ColumnPropNameInRow="Origen" msprop:Generator_ColumnPropNameInTable="OrigenColumn" msprop:Generator_UserColumnName="Origen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="Creación" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCreación" msprop:Generator_ColumnPropNameInRow="Creación" msprop:Generator_ColumnPropNameInTable="CreaciónColumn" msprop:Generator_UserColumnName="Creación" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vencimiento" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVencimiento" msprop:Generator_ColumnPropNameInRow="Vencimiento" msprop:Generator_ColumnPropNameInTable="VencimientoColumn" msprop:Generator_UserColumnName="Vencimiento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Dias_x0020_Atrasado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDias_Atrasado" msprop:Generator_ColumnPropNameInRow="Dias_Atrasado" msprop:Generator_ColumnPropNameInTable="Dias_AtrasadoColumn" msprop:Generator_UserColumnName="Dias Atrasado" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtCerrarAR" />
+      <xs:field xpath="mstns:NumSAP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

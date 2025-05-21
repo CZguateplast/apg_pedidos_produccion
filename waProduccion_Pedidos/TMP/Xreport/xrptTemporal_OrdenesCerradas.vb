@@ -1,0 +1,3 @@
+﻿Public Class xrptTemporal_OrdenesCerradas
+
+End Class

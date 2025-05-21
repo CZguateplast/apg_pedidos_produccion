@@ -1,0 +1,3 @@
+﻿Public Class xrptParametros_InstruccionesTrabajo
+
+End Class

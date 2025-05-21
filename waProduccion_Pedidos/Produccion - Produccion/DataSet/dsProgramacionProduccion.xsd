@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsProgramacionProduccion" targetNamespace="http://tempuri.org/dsProgramacionProduccion.xsd" xmlns:mstns="http://tempuri.org/dsProgramacionProduccion.xsd" xmlns="http://tempuri.org/dsProgramacionProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsProgramacionProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsProgramacionProduccion" msprop:Generator_UserDSName="dsProgramacionProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtOrdenesProduccion" msprop:Generator_TableClassName="dsdtOrdenesProduccionDataTable" msprop:Generator_TableVarName="tabledsdtOrdenesProduccion" msprop:Generator_RowChangedName="dsdtOrdenesProduccionRowChanged" msprop:Generator_TablePropName="dsdtOrdenesProduccion" msprop:Generator_RowDeletingName="dsdtOrdenesProduccionRowDeleting" msprop:Generator_RowChangingName="dsdtOrdenesProduccionRowChanging" msprop:Generator_RowEvHandlerName="dsdtOrdenesProduccionRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtOrdenesProduccionRowDeleted" msprop:Generator_RowClassName="dsdtOrdenesProduccionRow" msprop:Generator_UserTableName="dsdtOrdenesProduccion" msprop:Generator_RowEvArgName="dsdtOrdenesProduccionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emergencia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmergencia" msprop:Generator_ColumnPropNameInRow="Emergencia" msprop:Generator_ColumnPropNameInTable="EmergenciaColumn" msprop:Generator_UserColumnName="Emergencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prioridad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPrioridad" msprop:Generator_ColumnPropNameInRow="Prioridad" msprop:Generator_ColumnPropNameInTable="PrioridadColumn" msprop:Generator_UserColumnName="Prioridad" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="Preferencial" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPreferencial" msprop:Generator_ColumnPropNameInRow="Preferencial" msprop:Generator_ColumnPropNameInTable="PreferencialColumn" msprop:Generator_UserColumnName="Preferencial" type="xs:int" minOccurs="0" />
+              <xs:element name="GrupoMaquina" msprop:Generator_ColumnVarNameInTable="columnGrupoMaquina" msprop:Generator_ColumnPropNameInRow="GrupoMaquina" msprop:Generator_ColumnPropNameInTable="GrupoMaquinaColumn" msprop:Generator_UserColumnName="GrupoMaquina" type="xs:int" minOccurs="0" />
+              <xs:element name="PrioridadEmergencia" msprop:Generator_ColumnVarNameInTable="columnPrioridadEmergencia" msprop:Generator_ColumnPropNameInRow="PrioridadEmergencia" msprop:Generator_ColumnPropNameInTable="PrioridadEmergenciaColumn" msprop:Generator_UserColumnName="PrioridadEmergencia" type="xs:int" minOccurs="0" />
+              <xs:element name="HorasPendiente" msprop:Generator_ColumnVarNameInTable="columnHorasPendiente" msprop:Generator_ColumnPropNameInRow="HorasPendiente" msprop:Generator_ColumnPropNameInTable="HorasPendienteColumn" msprop:Generator_UserColumnName="HorasPendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="ProduccionHora" msprop:Generator_ColumnVarNameInTable="columnProduccionHora" msprop:Generator_ColumnPropNameInRow="ProduccionHora" msprop:Generator_ColumnPropNameInTable="ProduccionHoraColumn" msprop:Generator_UserColumnName="ProduccionHora" type="xs:int" minOccurs="0" />
+              <xs:element name="PromedioMaquina" msprop:Generator_ColumnVarNameInTable="columnPromedioMaquina" msprop:Generator_ColumnPropNameInRow="PromedioMaquina" msprop:Generator_ColumnPropNameInTable="PromedioMaquinaColumn" msprop:Generator_UserColumnName="PromedioMaquina" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtOrdenesProgramadas" msprop:Generator_TableClassName="dsdtOrdenesProgramadasDataTable" msprop:Generator_TableVarName="tabledsdtOrdenesProgramadas" msprop:Generator_TablePropName="dsdtOrdenesProgramadas" msprop:Generator_RowDeletingName="dsdtOrdenesProgramadasRowDeleting" msprop:Generator_RowChangingName="dsdtOrdenesProgramadasRowChanging" msprop:Generator_RowEvHandlerName="dsdtOrdenesProgramadasRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtOrdenesProgramadasRowDeleted" msprop:Generator_UserTableName="dsdtOrdenesProgramadas" msprop:Generator_RowChangedName="dsdtOrdenesProgramadasRowChanged" msprop:Generator_RowEvArgName="dsdtOrdenesProgramadasRowChangeEvent" msprop:Generator_RowClassName="dsdtOrdenesProgramadasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Preferencial" msprop:Generator_ColumnVarNameInTable="columnPreferencial" msprop:Generator_ColumnPropNameInRow="Preferencial" msprop:Generator_ColumnPropNameInTable="PreferencialColumn" msprop:Generator_UserColumnName="Preferencial" type="xs:int" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Prioridad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPrioridad" msprop:Generator_ColumnPropNameInRow="Prioridad" msprop:Generator_ColumnPropNameInTable="PrioridadColumn" msprop:Generator_UserColumnName="Prioridad" type="xs:int" minOccurs="0" />
+              <xs:element name="PrioridadMaquina" msprop:Generator_ColumnVarNameInTable="columnPrioridadMaquina" msprop:Generator_ColumnPropNameInRow="PrioridadMaquina" msprop:Generator_ColumnPropNameInTable="PrioridadMaquinaColumn" msprop:Generator_UserColumnName="PrioridadMaquina" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="ProduccionHora" msprop:Generator_ColumnVarNameInTable="columnProduccionHora" msprop:Generator_ColumnPropNameInRow="ProduccionHora" msprop:Generator_ColumnPropNameInTable="ProduccionHoraColumn" msprop:Generator_UserColumnName="ProduccionHora" type="xs:string" minOccurs="0" />
+              <xs:element name="HorasPendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHorasPendiente" msprop:Generator_ColumnPropNameInRow="HorasPendiente" msprop:Generator_ColumnPropNameInTable="HorasPendienteColumn" msprop:Generator_UserColumnName="HorasPendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtOrdenesProduccion_Todas" msprop:Generator_TableClassName="dsdtOrdenesProduccion_TodasDataTable" msprop:Generator_TableVarName="tabledsdtOrdenesProduccion_Todas" msprop:Generator_TablePropName="dsdtOrdenesProduccion_Todas" msprop:Generator_RowDeletingName="dsdtOrdenesProduccion_TodasRowDeleting" msprop:Generator_RowChangingName="dsdtOrdenesProduccion_TodasRowChanging" msprop:Generator_RowEvHandlerName="dsdtOrdenesProduccion_TodasRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtOrdenesProduccion_TodasRowDeleted" msprop:Generator_UserTableName="dsdtOrdenesProduccion_Todas" msprop:Generator_RowChangedName="dsdtOrdenesProduccion_TodasRowChanged" msprop:Generator_RowEvArgName="dsdtOrdenesProduccion_TodasRowChangeEvent" msprop:Generator_RowClassName="dsdtOrdenesProduccion_TodasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emergencia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmergencia" msprop:Generator_ColumnPropNameInRow="Emergencia" msprop:Generator_ColumnPropNameInTable="EmergenciaColumn" msprop:Generator_UserColumnName="Emergencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prioridad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPrioridad" msprop:Generator_ColumnPropNameInRow="Prioridad" msprop:Generator_ColumnPropNameInTable="PrioridadColumn" msprop:Generator_UserColumnName="Prioridad" type="xs:int" minOccurs="0" />
+              <xs:element name="CodigoArticulo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Planeado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="Preferencial" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPreferencial" msprop:Generator_ColumnPropNameInRow="Preferencial" msprop:Generator_ColumnPropNameInTable="PreferencialColumn" msprop:Generator_UserColumnName="Preferencial" type="xs:int" minOccurs="0" />
+              <xs:element name="GrupoMaquina" msprop:Generator_ColumnVarNameInTable="columnGrupoMaquina" msprop:Generator_ColumnPropNameInRow="GrupoMaquina" msprop:Generator_ColumnPropNameInTable="GrupoMaquinaColumn" msprop:Generator_UserColumnName="GrupoMaquina" type="xs:int" minOccurs="0" />
+              <xs:element name="PrioridadEmergencia" msprop:Generator_ColumnVarNameInTable="columnPrioridadEmergencia" msprop:Generator_ColumnPropNameInRow="PrioridadEmergencia" msprop:Generator_ColumnPropNameInTable="PrioridadEmergenciaColumn" msprop:Generator_UserColumnName="PrioridadEmergencia" type="xs:string" minOccurs="0" />
+              <xs:element name="HorasPendiente" msprop:Generator_ColumnVarNameInTable="columnHorasPendiente" msprop:Generator_ColumnPropNameInRow="HorasPendiente" msprop:Generator_ColumnPropNameInTable="HorasPendienteColumn" msprop:Generator_UserColumnName="HorasPendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="ProduccionHora" msprop:Generator_ColumnVarNameInTable="columnProduccionHora" msprop:Generator_ColumnPropNameInRow="ProduccionHora" msprop:Generator_ColumnPropNameInTable="ProduccionHoraColumn" msprop:Generator_UserColumnName="ProduccionHora" type="xs:int" minOccurs="0" />
+              <xs:element name="PromedioMaquina" msprop:Generator_ColumnVarNameInTable="columnPromedioMaquina" msprop:Generator_ColumnPropNameInRow="PromedioMaquina" msprop:Generator_ColumnPropNameInTable="PromedioMaquinaColumn" msprop:Generator_UserColumnName="PromedioMaquina" type="xs:int" minOccurs="0" />
+              <xs:element name="MaquinasEnGrupo" msprop:Generator_ColumnVarNameInTable="columnMaquinasEnGrupo" msprop:Generator_ColumnPropNameInRow="MaquinasEnGrupo" msprop:Generator_ColumnPropNameInTable="MaquinasEnGrupoColumn" msprop:Generator_UserColumnName="MaquinasEnGrupo" type="xs:string" minOccurs="0" />
+              <xs:element name="RangoToneladas" msprop:Generator_ColumnVarNameInTable="columnRangoToneladas" msprop:Generator_ColumnPropNameInRow="RangoToneladas" msprop:Generator_ColumnPropNameInTable="RangoToneladasColumn" msprop:Generator_UserColumnName="RangoToneladas" type="xs:string" minOccurs="0" />
+              <xs:element name="F.Solicitud" msprop:Generator_ColumnVarNameInTable="_columnF_Solicitud" msprop:Generator_ColumnPropNameInRow="_F_Solicitud" msprop:Generator_ColumnPropNameInTable="_F_SolicitudColumn" msprop:Generator_UserColumnName="F.Solicitud" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="F.URecibo" msprop:Generator_ColumnVarNameInTable="_columnF_URecibo" msprop:Generator_ColumnPropNameInRow="_F_URecibo" msprop:Generator_ColumnPropNameInTable="_F_UReciboColumn" msprop:Generator_UserColumnName="F.URecibo" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

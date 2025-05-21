@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbconectionSQL_GT_Tipo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbconectionSQL_GT</Value>
+    </Setting>
+    <Setting Name="dbconectionSQL_GT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EBgpfCZrGOnGgpQ/EvgB55P+sf5JyNqs8NrR1ViH7JubZtNAIAQObulx0fLndAntoLRb5/pMuKTEm58jMA7gzdc3rp/9kl1k
+</Value>
+    </Setting>
+    <Setting Name="dbconectionSQL_GTT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EBgpfCZrGOnGgpQ/EvgB55P+sf5JyNqsowyNAGRLl+LrEB6cNcuB0ZgVC+9ufVXbBVkaTn5qvjOb6anDITOivA==</Value>
+    </Setting>
+    <Setting Name="dbconectionSQL_SV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EBgpfCZrGOnGgpQ/EvgB55P+sf5JyNqsSeC19hJUa4u7i1PQnCSI5ZgVC+9ufVXbBVkaTn5qvjOb6anDITOivA==
+</Value>
+    </Setting>
+    <Setting Name="dbconectionSQL_CR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EBgpfCZrGOnGgpQ/EvgB55P+sf5JyNqsuxyl2PsH3Q2YFQvvbn1V2wVZGk5+ar4zm+mpwyEzorw=
+</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_GT_Tipo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbconectionDIAPI_GT</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_GT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+aUtJuTBXQAiPj7nq6EBPM7kN0BcTg5eo6WJFsZZ3maawwl1aRF5EpLE1nhHRTW9q499d15q+nLPjNK87+dfI99yfRp51hVu1OOkKcDP4CXEGNm3FDfK/blNqlN4TVFS8sJv5cRBauEvLiDGJqTeALS2eE7kofY5bjhpugW9NmPNrfvekfL9UPWpYEUDaYZL1u/Z18efIDEp0YaM772w91Po=</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_GTT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+aU8gGGETl6mFcKR1Ry3fquqSkC2wCZ5N2w2raSrcMAFTsOFU5RaKZI6n87qI3UdKVFx+IBKaeIvN6PpXixfhqgfuHSL7F2DZwm0ygDXdOVoTO+WrpPP6Xaxb0gx9zdEsmxR8Kk3FdPoxFoT+iUscZ7769NAoysMpSZCFy1gz/tZjRqaEr89oDlrvAp9QrXnzJQ==</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_SV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+aQ9QbyBusP34T3iaMc2zsduSkC2wCZ5N2w2raSrcMAFTsOFU5RaKZI6n87qI3UdKVFx+IBKaeIvN6PpXixfhqgfuHSL7F2DZwm0ygDXdOVoTO+WrpPP6Xaxb0gx9zdEsmxR8Kk3FdPoxFoT+iUscZ7769NAoysMpSZCFy1gz/tZjRqaEr89oDlrvAp9QrXnzJQ==</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_CR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+aUaVmnPyIYJbkpAtsAmeTdsNq2kq3DABU7DhVOUWimSOp/O6iN1HSlRcfiASmniLzej6V4sX4aoH7h0i+xdg2cJtMoA13TlaEzvlq6Tz+l2sW9IMfc3RLJsUfCpNxXT6MRaE/olLHGe++vTQKMrDKUmQhctYM/7WY0amhK/PaA5a7wKfUK158yU=</Value>
+    </Setting>
+    <Setting Name="log_Usuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">czepeda</Value>
+    </Setting>
+    <Setting Name="log_Nombre" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Carlos Zepeda</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_GTTGuateplast" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+aU8gGGETl6mFcKR1Ry3fquqSkC2wCZ5N2w2raSrcMAFTsOFU5RaKZI6n87qI3UdKVFx+IBKaeIvN6PpXixfhqgfuHSL7F2DZwm0ygDXdOVoTO+WrpPP6Xaxb0gx9zdEsmxR8Kk3FdPoxFoT+iUscZ77bQyMJgG2m8lfxkppoUO2k/PrK9I/zIbJkjv17KLItCdc3rp/9kl1k</Value>
+    </Setting>
+    <Setting Name="EMAIL_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">informatica@guateplast.com</Value>
+    </Setting>
+    <Setting Name="EMAIL_Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Inf0gt2015</Value>
+    </Setting>
+    <Setting Name="log_DB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SBOGuatetest</Value>
+    </Setting>
+    <Setting Name="dbconectionSQL_MX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EBgpfCZrGOnGgpQ/EvgB55P+sf5JyNqs8NrR1ViH7Js5Zor/pbmLiUtroNDpfiTe7h0i+xdg2cLHlCEH8DE3Dw==</Value>
+    </Setting>
+    <Setting Name="dbconectionDIAPI_MX" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FadWnNLdKOTMTlLdf2R2UK+brPZ7tOvlug1xv+1+YMCNolxNs1N+afB+Cn2Wu6ULLqLwyXC5xW77T2AC6DA01WBzh5/RqLcMtMW07lMLIbdri/LDFCI96t0mUKp9L2DiSIKjEsLfu1KtaviZ1NC8LmRQf7N12yhg29lZjetxALtC0TRGtM6cm/ReuTew50RGYitrifwbXtAVp1ac0t0o5MxOUt1/ZHZQr5us9nu06+Vh2NuJDQ7LioyXfvCEflQE</Value>
+    </Setting>
+    <Setting Name="SBOGuateplastConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GuateSAP;Initial Catalog=SBOGuateplast;Persist Security Info=True;User ID=sa;Password=Plastic0&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GuateSAP;Initial Catalog=SBOGuateplast;Persist Security Info=True;User ID=sa;Password=Plastic0</Value>
+    </Setting>
+    <Setting Name="APGProduccionConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GuateSAP;Initial Catalog=APGProduccion;User ID=sa;Password=Plastic0&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GuateSAP;Initial Catalog=APGProduccion;User ID=sa;Password=Plastic0</Value>
+    </Setting>
+    <Setting Name="SBOGuateplastConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GuateSAP;Initial Catalog=SBOGuateplast;Persist Security Info=True;User ID=sa;Password=Plastic0&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GuateSAP;Initial Catalog=SBOGuateplast;Persist Security Info=True;User ID=sa;Password=Plastic0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

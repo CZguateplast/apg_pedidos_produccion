@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTrasladosMercaderia" targetNamespace="http://tempuri.org/dsTrasladosMercaderia.xsd" xmlns:mstns="http://tempuri.org/dsTrasladosMercaderia.xsd" xmlns="http://tempuri.org/dsTrasladosMercaderia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTrasladosMercaderia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTrasladosMercaderia" msprop:Generator_UserDSName="dsTrasladosMercaderia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtTrasladosMercaderiaEncabezado" msprop:Generator_TableClassName="dsdtTrasladosMercaderiaEncabezadoDataTable" msprop:Generator_TableVarName="tabledsdtTrasladosMercaderiaEncabezado" msprop:Generator_TablePropName="dsdtTrasladosMercaderiaEncabezado" msprop:Generator_RowDeletingName="dsdtTrasladosMercaderiaEncabezadoRowDeleting" msprop:Generator_RowChangingName="dsdtTrasladosMercaderiaEncabezadoRowChanging" msprop:Generator_RowEvHandlerName="dsdtTrasladosMercaderiaEncabezadoRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTrasladosMercaderiaEncabezadoRowDeleted" msprop:Generator_UserTableName="dsdtTrasladosMercaderiaEncabezado" msprop:Generator_RowChangedName="dsdtTrasladosMercaderiaEncabezadoRowChanged" msprop:Generator_RowEvArgName="dsdtTrasladosMercaderiaEncabezadoRowChangeEvent" msprop:Generator_RowClassName="dsdtTrasladosMercaderiaEncabezadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListaPrecios" msprop:Generator_ColumnVarNameInTable="columnListaPrecios" msprop:Generator_ColumnPropNameInRow="ListaPrecios" msprop:Generator_ColumnPropNameInTable="ListaPreciosColumn" msprop:Generator_UserColumnName="ListaPrecios" type="xs:short" minOccurs="0" />
+              <xs:element name="FechaConta" msprop:Generator_ColumnVarNameInTable="columnFechaConta" msprop:Generator_ColumnPropNameInRow="FechaConta" msprop:Generator_ColumnPropNameInTable="FechaContaColumn" msprop:Generator_UserColumnName="FechaConta" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaDocumento" msprop:Generator_ColumnVarNameInTable="columnFechaDocumento" msprop:Generator_ColumnPropNameInRow="FechaDocumento" msprop:Generator_ColumnPropNameInTable="FechaDocumentoColumn" msprop:Generator_UserColumnName="FechaDocumento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumReferencia" msprop:Generator_ColumnVarNameInTable="columnNumReferencia" msprop:Generator_ColumnPropNameInRow="NumReferencia" msprop:Generator_ColumnPropNameInTable="NumReferenciaColumn" msprop:Generator_UserColumnName="NumReferencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CuentaContable" msprop:Generator_ColumnVarNameInTable="columnCuentaContable" msprop:Generator_ColumnPropNameInRow="CuentaContable" msprop:Generator_ColumnPropNameInTable="CuentaContableColumn" msprop:Generator_UserColumnName="CuentaContable" type="xs:string" minOccurs="0" />
+              <xs:element name="AsientoContable" msprop:Generator_ColumnVarNameInTable="columnAsientoContable" msprop:Generator_ColumnPropNameInRow="AsientoContable" msprop:Generator_ColumnPropNameInTable="AsientoContableColumn" msprop:Generator_UserColumnName="AsientoContable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtTrasladosMercaderiaDetalle" msprop:Generator_TableClassName="dsdtTrasladosMercaderiaDetalleDataTable" msprop:Generator_TableVarName="tabledsdtTrasladosMercaderiaDetalle" msprop:Generator_TablePropName="dsdtTrasladosMercaderiaDetalle" msprop:Generator_RowDeletingName="dsdtTrasladosMercaderiaDetalleRowDeleting" msprop:Generator_RowChangingName="dsdtTrasladosMercaderiaDetalleRowChanging" msprop:Generator_RowEvHandlerName="dsdtTrasladosMercaderiaDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTrasladosMercaderiaDetalleRowDeleted" msprop:Generator_UserTableName="dsdtTrasladosMercaderiaDetalle" msprop:Generator_RowChangedName="dsdtTrasladosMercaderiaDetalleRowChanged" msprop:Generator_RowEvArgName="dsdtTrasladosMercaderiaDetalleRowChangeEvent" msprop:Generator_RowClassName="dsdtTrasladosMercaderiaDetalleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnidadMedida" msprop:Generator_ColumnVarNameInTable="columnUnidadMedida" msprop:Generator_ColumnPropNameInRow="UnidadMedida" msprop:Generator_ColumnPropNameInTable="UnidadMedidaColumn" msprop:Generator_UserColumnName="UnidadMedida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bodega" msprop:Generator_ColumnVarNameInTable="columnBodega" msprop:Generator_ColumnPropNameInRow="Bodega" msprop:Generator_ColumnPropNameInTable="BodegaColumn" msprop:Generator_UserColumnName="Bodega" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CuentaContable" msprop:Generator_ColumnVarNameInTable="columnCuentaContable" msprop:Generator_ColumnPropNameInRow="CuentaContable" msprop:Generator_ColumnPropNameInTable="CuentaContableColumn" msprop:Generator_UserColumnName="CuentaContable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtTrasladosMercaderiaImpresionEncabezado" msprop:Generator_TableClassName="dsdtTrasladosMercaderiaImpresionEncabezadoDataTable" msprop:Generator_TableVarName="tabledsdtTrasladosMercaderiaImpresionEncabezado" msprop:Generator_TablePropName="dsdtTrasladosMercaderiaImpresionEncabezado" msprop:Generator_RowDeletingName="dsdtTrasladosMercaderiaImpresionEncabezadoRowDeleting" msprop:Generator_RowChangingName="dsdtTrasladosMercaderiaImpresionEncabezadoRowChanging" msprop:Generator_RowEvHandlerName="dsdtTrasladosMercaderiaImpresionEncabezadoRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTrasladosMercaderiaImpresionEncabezadoRowDeleted" msprop:Generator_UserTableName="dsdtTrasladosMercaderiaImpresionEncabezado" msprop:Generator_RowChangedName="dsdtTrasladosMercaderiaImpresionEncabezadoRowChanged" msprop:Generator_RowEvArgName="dsdtTrasladosMercaderiaImpresionEncabezadoRowChangeEvent" msprop:Generator_RowClassName="dsdtTrasladosMercaderiaImpresionEncabezadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumSAP" msprop:Generator_ColumnVarNameInTable="columnNumSAP" msprop:Generator_ColumnPropNameInRow="NumSAP" msprop:Generator_ColumnPropNameInTable="NumSAPColumn" msprop:Generator_UserColumnName="NumSAP" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Hora" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHora" msprop:Generator_ColumnPropNameInRow="Hora" msprop:Generator_ColumnPropNameInTable="HoraColumn" msprop:Generator_UserColumnName="Hora" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ListaPrecios" msprop:Generator_ColumnVarNameInTable="columnListaPrecios" msprop:Generator_ColumnPropNameInRow="ListaPrecios" msprop:Generator_ColumnPropNameInTable="ListaPreciosColumn" msprop:Generator_UserColumnName="ListaPrecios" type="xs:short" minOccurs="0" />
+              <xs:element name="ListaNombre" msprop:Generator_ColumnVarNameInTable="columnListaNombre" msprop:Generator_ColumnPropNameInRow="ListaNombre" msprop:Generator_ColumnPropNameInTable="ListaNombreColumn" msprop:Generator_UserColumnName="ListaNombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocTotal" msprop:Generator_ColumnVarNameInTable="columnDocTotal" msprop:Generator_ColumnPropNameInRow="DocTotal" msprop:Generator_ColumnPropNameInTable="DocTotalColumn" msprop:Generator_UserColumnName="DocTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UsuarioAPG" msprop:Generator_ColumnVarNameInTable="columnUsuarioAPG" msprop:Generator_ColumnPropNameInRow="UsuarioAPG" msprop:Generator_ColumnPropNameInTable="UsuarioAPGColumn" msprop:Generator_UserColumnName="UsuarioAPG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtTrasladosmercaderiaImpresionDetalle" msprop:Generator_TableClassName="dsdtTrasladosmercaderiaImpresionDetalleDataTable" msprop:Generator_TableVarName="tabledsdtTrasladosmercaderiaImpresionDetalle" msprop:Generator_TablePropName="dsdtTrasladosmercaderiaImpresionDetalle" msprop:Generator_RowDeletingName="dsdtTrasladosmercaderiaImpresionDetalleRowDeleting" msprop:Generator_RowChangingName="dsdtTrasladosmercaderiaImpresionDetalleRowChanging" msprop:Generator_RowEvHandlerName="dsdtTrasladosmercaderiaImpresionDetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTrasladosmercaderiaImpresionDetalleRowDeleted" msprop:Generator_UserTableName="dsdtTrasladosmercaderiaImpresionDetalle" msprop:Generator_RowChangedName="dsdtTrasladosmercaderiaImpresionDetalleRowChanged" msprop:Generator_RowEvArgName="dsdtTrasladosmercaderiaImpresionDetalleRowChangeEvent" msprop:Generator_RowClassName="dsdtTrasladosmercaderiaImpresionDetalleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UM" msprop:Generator_ColumnVarNameInTable="columnUM" msprop:Generator_ColumnPropNameInRow="UM" msprop:Generator_ColumnPropNameInTable="UMColumn" msprop:Generator_UserColumnName="UM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Costo" msprop:Generator_ColumnVarNameInTable="columnCosto" msprop:Generator_ColumnPropNameInRow="Costo" msprop:Generator_ColumnPropNameInTable="CostoColumn" msprop:Generator_UserColumnName="Costo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalLinea" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalLinea" msprop:Generator_ColumnPropNameInRow="TotalLinea" msprop:Generator_ColumnPropNameInTable="TotalLineaColumn" msprop:Generator_UserColumnName="TotalLinea" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsdtTrasladosMercaderiaImpresion" msprop:Generator_TableClassName="dsdtTrasladosMercaderiaImpresionDataTable" msprop:Generator_TableVarName="tabledsdtTrasladosMercaderiaImpresion" msprop:Generator_TablePropName="dsdtTrasladosMercaderiaImpresion" msprop:Generator_RowDeletingName="dsdtTrasladosMercaderiaImpresionRowDeleting" msprop:Generator_RowChangingName="dsdtTrasladosMercaderiaImpresionRowChanging" msprop:Generator_RowEvHandlerName="dsdtTrasladosMercaderiaImpresionRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtTrasladosMercaderiaImpresionRowDeleted" msprop:Generator_UserTableName="dsdtTrasladosMercaderiaImpresion" msprop:Generator_RowChangedName="dsdtTrasladosMercaderiaImpresionRowChanged" msprop:Generator_RowEvArgName="dsdtTrasladosMercaderiaImpresionRowChangeEvent" msprop:Generator_RowClassName="dsdtTrasladosMercaderiaImpresionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumSAP" msprop:Generator_ColumnVarNameInTable="columnNumSAP" msprop:Generator_ColumnPropNameInRow="NumSAP" msprop:Generator_ColumnPropNameInTable="NumSAPColumn" msprop:Generator_UserColumnName="NumSAP" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Hora" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHora" msprop:Generator_ColumnPropNameInRow="Hora" msprop:Generator_ColumnPropNameInTable="HoraColumn" msprop:Generator_UserColumnName="Hora" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ListaPrecios" msprop:Generator_ColumnVarNameInTable="columnListaPrecios" msprop:Generator_ColumnPropNameInRow="ListaPrecios" msprop:Generator_ColumnPropNameInTable="ListaPreciosColumn" msprop:Generator_UserColumnName="ListaPrecios" type="xs:short" minOccurs="0" />
+              <xs:element name="ListaNombre" msprop:Generator_ColumnVarNameInTable="columnListaNombre" msprop:Generator_ColumnPropNameInRow="ListaNombre" msprop:Generator_ColumnPropNameInTable="ListaNombreColumn" msprop:Generator_UserColumnName="ListaNombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocTotal" msprop:Generator_ColumnVarNameInTable="columnDocTotal" msprop:Generator_ColumnPropNameInRow="DocTotal" msprop:Generator_ColumnPropNameInTable="DocTotalColumn" msprop:Generator_UserColumnName="DocTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UsuarioAPG" msprop:Generator_ColumnVarNameInTable="columnUsuarioAPG" msprop:Generator_ColumnPropNameInRow="UsuarioAPG" msprop:Generator_ColumnPropNameInTable="UsuarioAPGColumn" msprop:Generator_UserColumnName="UsuarioAPG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:dsdtTrasladosMercaderiaDetalle" />
+      <xs:field xpath="mstns:CodigoArticulo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

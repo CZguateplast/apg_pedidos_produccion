@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsListaMaterialEliminarCompleto" targetNamespace="http://tempuri.org/dsListaMaterialEliminarCompleto.xsd" xmlns:mstns="http://tempuri.org/dsListaMaterialEliminarCompleto.xsd" xmlns="http://tempuri.org/dsListaMaterialEliminarCompleto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsListaMaterialEliminarCompleto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsListaMaterialEliminarCompleto" msprop:Generator_UserDSName="dsListaMaterialEliminarCompleto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtListaMaterialEliminarCompleto" msprop:Generator_TableClassName="dsdtListaMaterialEliminarCompletoDataTable" msprop:Generator_TableVarName="tabledsdtListaMaterialEliminarCompleto" msprop:Generator_TablePropName="dsdtListaMaterialEliminarCompleto" msprop:Generator_RowDeletingName="dsdtListaMaterialEliminarCompletoRowDeleting" msprop:Generator_RowChangingName="dsdtListaMaterialEliminarCompletoRowChanging" msprop:Generator_RowEvHandlerName="dsdtListaMaterialEliminarCompletoRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtListaMaterialEliminarCompletoRowDeleted" msprop:Generator_UserTableName="dsdtListaMaterialEliminarCompleto" msprop:Generator_RowChangedName="dsdtListaMaterialEliminarCompletoRowChanged" msprop:Generator_RowEvArgName="dsdtListaMaterialEliminarCompletoRowChangeEvent" msprop:Generator_RowClassName="dsdtListaMaterialEliminarCompletoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

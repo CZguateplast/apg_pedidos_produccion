@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCargarDatosProduccion" targetNamespace="http://tempuri.org/dsCargarDatosProduccion.xsd" xmlns:mstns="http://tempuri.org/dsCargarDatosProduccion.xsd" xmlns="http://tempuri.org/dsCargarDatosProduccion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCargarDatosProduccion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCargarDatosProduccion" msprop:Generator_UserDSName="dsCargarDatosProduccion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtCargarDatosProduccion" msprop:Generator_TableClassName="dsdtCargarDatosProduccionDataTable" msprop:Generator_TableVarName="tabledsdtCargarDatosProduccion" msprop:Generator_RowChangedName="dsdtCargarDatosProduccionRowChanged" msprop:Generator_TablePropName="dsdtCargarDatosProduccion" msprop:Generator_RowDeletingName="dsdtCargarDatosProduccionRowDeleting" msprop:Generator_RowChangingName="dsdtCargarDatosProduccionRowChanging" msprop:Generator_RowEvHandlerName="dsdtCargarDatosProduccionRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtCargarDatosProduccionRowDeleted" msprop:Generator_RowClassName="dsdtCargarDatosProduccionRow" msprop:Generator_UserTableName="dsdtCargarDatosProduccion" msprop:Generator_RowEvArgName="dsdtCargarDatosProduccionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumeroMaquina" msprop:Generator_ColumnVarNameInTable="columnNumeroMaquina" msprop:Generator_ColumnPropNameInRow="NumeroMaquina" msprop:Generator_ColumnPropNameInTable="NumeroMaquinaColumn" msprop:Generator_UserColumnName="NumeroMaquina" type="xs:double" minOccurs="0" />
+              <xs:element name="UnidadesHora" msprop:Generator_ColumnVarNameInTable="columnUnidadesHora" msprop:Generator_ColumnPropNameInRow="UnidadesHora" msprop:Generator_ColumnPropNameInTable="UnidadesHoraColumn" msprop:Generator_UserColumnName="UnidadesHora" type="xs:double" minOccurs="0" />
+              <xs:element name="UnidadMedida" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUnidadMedida" msprop:Generator_ColumnPropNameInRow="UnidadMedida" msprop:Generator_ColumnPropNameInTable="UnidadMedidaColumn" msprop:Generator_UserColumnName="UnidadMedida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CavidadesMolde" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCavidadesMolde" msprop:Generator_ColumnPropNameInRow="CavidadesMolde" msprop:Generator_ColumnPropNameInTable="CavidadesMoldeColumn" msprop:Generator_UserColumnName="CavidadesMolde" type="xs:double" minOccurs="0" />
+              <xs:element name="Material1" msprop:Generator_ColumnVarNameInTable="columnMaterial1" msprop:Generator_ColumnPropNameInRow="Material1" msprop:Generator_ColumnPropNameInTable="Material1Column" msprop:Generator_UserColumnName="Material1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Porcentaje1" msprop:Generator_ColumnVarNameInTable="columnPorcentaje1" msprop:Generator_ColumnPropNameInRow="Porcentaje1" msprop:Generator_ColumnPropNameInTable="Porcentaje1Column" msprop:Generator_UserColumnName="Porcentaje1" type="xs:double" minOccurs="0" />
+              <xs:element name="Material2" msprop:Generator_ColumnVarNameInTable="columnMaterial2" msprop:Generator_ColumnPropNameInRow="Material2" msprop:Generator_ColumnPropNameInTable="Material2Column" msprop:Generator_UserColumnName="Material2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Porcentaje2" msprop:Generator_ColumnVarNameInTable="columnPorcentaje2" msprop:Generator_ColumnPropNameInRow="Porcentaje2" msprop:Generator_ColumnPropNameInTable="Porcentaje2Column" msprop:Generator_UserColumnName="Porcentaje2" type="xs:double" minOccurs="0" />
+              <xs:element name="PesoGramos" msprop:Generator_ColumnVarNameInTable="columnPesoGramos" msprop:Generator_ColumnPropNameInRow="PesoGramos" msprop:Generator_ColumnPropNameInTable="PesoGramosColumn" msprop:Generator_UserColumnName="PesoGramos" type="xs:double" minOccurs="0" />
+              <xs:element name="CodigoMolde" msprop:Generator_ColumnVarNameInTable="columnCodigoMolde" msprop:Generator_ColumnPropNameInRow="CodigoMolde" msprop:Generator_ColumnPropNameInTable="CodigoMoldeColumn" msprop:Generator_UserColumnName="CodigoMolde" type="xs:double" />
+              <xs:element name="InyeccionGrms" msprop:Generator_ColumnVarNameInTable="columnInyeccionGrms" msprop:Generator_ColumnPropNameInRow="InyeccionGrms" msprop:Generator_ColumnPropNameInTable="InyeccionGrmsColumn" msprop:Generator_UserColumnName="InyeccionGrms" type="xs:double" minOccurs="0" />
+              <xs:element name="InyeccionVariacion" msprop:Generator_ColumnVarNameInTable="columnInyeccionVariacion" msprop:Generator_ColumnPropNameInRow="InyeccionVariacion" msprop:Generator_ColumnPropNameInTable="InyeccionVariacionColumn" msprop:Generator_UserColumnName="InyeccionVariacion" type="xs:double" minOccurs="0" />
+              <xs:element name="InyeccionHora" msprop:Generator_ColumnVarNameInTable="columnInyeccionHora" msprop:Generator_ColumnPropNameInRow="InyeccionHora" msprop:Generator_ColumnPropNameInTable="InyeccionHoraColumn" msprop:Generator_UserColumnName="InyeccionHora" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dsdtCargarDatosProduccion" />
+      <xs:field xpath="mstns:Codigo" />
+      <xs:field xpath="mstns:CodigoMolde" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

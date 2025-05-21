@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReciboProduccionEnsamble" targetNamespace="http://tempuri.org/dsReciboProduccionEnsamble.xsd" xmlns:mstns="http://tempuri.org/dsReciboProduccionEnsamble.xsd" xmlns="http://tempuri.org/dsReciboProduccionEnsamble.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SBOGuateplastConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SBOGuateplastConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.waProduccion_Pedidos.My.MySettings.GlobalReference.Default.SBOGuateplastConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReciboProduccionEnsamble" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReciboProduccionEnsamble" msprop:Generator_UserDSName="dsReciboProduccionEnsamble">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsdtReciboProduccionEnsamble" msprop:Generator_TableClassName="dsdtReciboProduccionEnsambleDataTable" msprop:Generator_TableVarName="tabledsdtReciboProduccionEnsamble" msprop:Generator_RowChangedName="dsdtReciboProduccionEnsambleRowChanged" msprop:Generator_TablePropName="dsdtReciboProduccionEnsamble" msprop:Generator_RowDeletingName="dsdtReciboProduccionEnsambleRowDeleting" msprop:Generator_RowChangingName="dsdtReciboProduccionEnsambleRowChanging" msprop:Generator_RowEvHandlerName="dsdtReciboProduccionEnsambleRowChangeEventHandler" msprop:Generator_RowDeletedName="dsdtReciboProduccionEnsambleRowDeleted" msprop:Generator_RowClassName="dsdtReciboProduccionEnsambleRow" msprop:Generator_UserTableName="dsdtReciboProduccionEnsamble" msprop:Generator_RowEvArgName="dsdtReciboProduccionEnsambleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SAP" msprop:Generator_ColumnVarNameInTable="columnSAP" msprop:Generator_ColumnPropNameInRow="SAP" msprop:Generator_ColumnPropNameInTable="SAPColumn" msprop:Generator_UserColumnName="SAP" type="xs:int" />
+              <xs:element name="Bodega" msprop:Generator_ColumnVarNameInTable="columnBodega" msprop:Generator_ColumnPropNameInRow="Bodega" msprop:Generator_ColumnPropNameInTable="BodegaColumn" msprop:Generator_UserColumnName="Bodega" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoArticulo" msprop:Generator_ColumnVarNameInTable="columnCodigoArticulo" msprop:Generator_ColumnPropNameInRow="CodigoArticulo" msprop:Generator_ColumnPropNameInTable="CodigoArticuloColumn" msprop:Generator_UserColumnName="CodigoArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreArticulo" msprop:Generator_ColumnVarNameInTable="columnNombreArticulo" msprop:Generator_ColumnPropNameInRow="NombreArticulo" msprop:Generator_ColumnPropNameInTable="NombreArticuloColumn" msprop:Generator_UserColumnName="NombreArticulo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:int" minOccurs="0" />
+              <xs:element name="Comprometido" msprop:Generator_ColumnVarNameInTable="columnComprometido" msprop:Generator_ColumnPropNameInRow="Comprometido" msprop:Generator_ColumnPropNameInTable="ComprometidoColumn" msprop:Generator_UserColumnName="Comprometido" type="xs:int" minOccurs="0" />
+              <xs:element name="Planeado" msprop:Generator_ColumnVarNameInTable="columnPlaneado" msprop:Generator_ColumnPropNameInRow="Planeado" msprop:Generator_ColumnPropNameInTable="PlaneadoColumn" msprop:Generator_UserColumnName="Planeado" type="xs:int" minOccurs="0" />
+              <xs:element name="Completado" msprop:Generator_ColumnVarNameInTable="columnCompletado" msprop:Generator_ColumnPropNameInRow="Completado" msprop:Generator_ColumnPropNameInTable="CompletadoColumn" msprop:Generator_UserColumnName="Completado" type="xs:int" minOccurs="0" />
+              <xs:element name="Pendiente" msprop:Generator_ColumnVarNameInTable="columnPendiente" msprop:Generator_ColumnPropNameInRow="Pendiente" msprop:Generator_ColumnPropNameInTable="PendienteColumn" msprop:Generator_UserColumnName="Pendiente" type="xs:int" minOccurs="0" />
+              <xs:element name="Cargar" msprop:Generator_ColumnVarNameInTable="columnCargar" msprop:Generator_ColumnPropNameInRow="Cargar" msprop:Generator_ColumnPropNameInTable="CargarColumn" msprop:Generator_UserColumnName="Cargar" type="xs:int" minOccurs="0" />
+              <xs:element name="Comentarios" msprop:Generator_ColumnVarNameInTable="columnComentarios" msprop:Generator_ColumnPropNameInRow="Comentarios" msprop:Generator_ColumnPropNameInTable="ComentariosColumn" msprop:Generator_UserColumnName="Comentarios" type="xs:string" minOccurs="0" />
+              <xs:element name="Cerrar" msprop:Generator_ColumnVarNameInTable="columnCerrar" msprop:Generator_ColumnPropNameInRow="Cerrar" msprop:Generator_ColumnPropNameInTable="CerrarColumn" msprop:Generator_UserColumnName="Cerrar" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:dsdtReciboProduccionEnsamble" />
+      <xs:field xpath="mstns:SAP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
